@@ -1,7 +1,7 @@
 {
   "manifest_version": 3,
   "name": "Bili IP Lens · B站评论 IP 属地",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "在 B站评论旁显示平台已有的 IP 属地。工具栏一键开关，即时生效。",
   "minimum_chrome_version": "111",
   "permissions": ["storage"],

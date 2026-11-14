@@ -42,3 +42,15 @@ does not substitute for testing them. Historical Vue comment UIs and live chat
 regions are outside v0.1.0's supported scope.
 
 No public repository, Chrome Web Store listing, or marketing posts were created.
+
+## Popup sizing correction · v0.1.1
+
+User testing exposed a narrow action popup that the full-tab preview did not
+reproduce. `max-width: 100vw` constrained the body to Chromium's initial popup
+viewport. Both `html` and `body` now declare a 352px width and minimum width;
+the viewport-dependent cap and narrow-screen override have been removed.
+
+Verified by reloading the installed extension and opening its actual toolbar
+popup: horizontal title and setting labels, intact switch, complete footer,
+and no long scrollbar. OFF persisted across closing and reopening the popup;
+the final state was restored to ON. Version 0.1.1 is installed in ego-browser.
