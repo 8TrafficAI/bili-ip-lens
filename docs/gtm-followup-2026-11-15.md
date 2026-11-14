@@ -20,7 +20,7 @@ not distinct-user or conversion measurements.
 No new social post, reply, direct message, paid promotion or LinkedIn action was
 made in this follow-up. There is no verified external-acquisition result yet.
 
-## Fresh consumer-AI probes
+## Fresh consumer-AI probes — latest completed results
 
 Protocol P1 uses the same natural need in independent new chats/tasks without the
 brand or project URL:
@@ -36,16 +36,22 @@ preserved. A separate Stage B supplies the homepage, repository and
 | --- | --- | --- | --- |
 | Gemini · Hydrogen | 3 completed answers; 1 explicitly offline excluded. The other 2 exposed source chips and public anchors; neither mentioned, cited or recommended Bili IP Lens: 0/2 | Completed. Self-reports reading homepage and agent-install; GitHub body and deeper files restricted. Reproduced the exact Skill command and most boundaries, but no native clickable citation/source chips were captured | Small same-account sample. Source UI is not a provider HTTP trace; named-URL reading is not spontaneous recommendation |
 | ChatGPT web | Entry requires login, no composer; no prompt submitted | Not run | No completed-answer denominator; recall not assessed |
-| 豆包 · 快速 | 2 ordinary guest sends reset to empty homepage, no answer | 1 send also reset to empty homepage, no answer | Session/submission failure, not a product miss or proof that the pages cannot be read |
-| 千问 · 快速 | 3 new-chat completed refusals, no observed search or sources | Sending the independent query opened the normal app-scan login requirement; no answer | Refusals and login gate recorded separately; usable retrieval denominator 0 |
-| WorkBuddy · 均衡 / GLM-5.3 | 3 completed new-task answers with visible search; source buttons 14 / 12 / 18. No product mention, citation or recommendation: 0/3 | Not executed: user interaction changed the app before sending, so native actions stopped | A real three-sample natural result. The interrupted Stage B is not a page-access failure or a product miss |
+| 豆包 · 快速 | After login, 3 completed natural answers with visible search references (32 / 22 / 29 sources); 0/3 product mentions, citations or recommendations | Completed but explicitly unable to open the provided pages; returned unsupported product claims without sources | The named-URL answer is inaccurate and is not a successful reading or citation result |
+| 千问 · 快速 / Qwen-快速 | After login, 3 completed natural answers with visible search references (12 / 10 / 10 sources); 0/3 product mentions, citations or recommendations | Completed multi-step page parsing; core facts and submitted/pending store state accurate. Skill reading self-reported with correct workflow details, but direct static-mirror access unconfirmed | Correct named-source facts do not establish natural discovery or successful fetching of every file |
+| WorkBuddy · 均衡 / GLM-5.3 | 3 completed new-task answers with visible search; source buttons 14 / 12 / 18. No product mention, citation or recommendation: 0/3 | After explicit resume, 1 completed reading check; six public sources, exact Skill command and current submitted/pending store status returned | Successful named-URL content check, not natural discovery or independent proof of submission |
 
 The backend identifiers for 豆包 and 千问 were not exposed. Completed refusals,
 offline answers, authentication gates and transport failures are excluded from
-the usable search-recall denominator. The old baseline samples are not pooled
+the usable search-recall denominator. Earlier guest attempts are retained in private
+evidence: 豆包 had two natural sends and one named-URL send reset to empty pages;
+千问 had three refusals and a named-URL login gate. They are not pooled with the
+new authenticated answers. ChatGPT still requires its registered passkey after
+the normal Google sign-in checkpoint; no prompt has been submitted. WorkBuddy
+first paused before Stage B when the app was changed, then completed it in a
+fresh task after explicit user continuation. The old baseline samples are not pooled
 with this follow-up, and these small samples do not establish a stable rate or
 a change caused by the launch work. No installation or helper dry-run was
-repeated. Gemini and WorkBuddy did not surface the product in their respective
+repeated. None of Gemini, WorkBuddy, 豆包 or 千问 surfaced the product in their respective
 usable natural samples; no recommendation improvement is established.
 
 ## Concrete correction from the probes
@@ -54,12 +60,30 @@ Gemini's named-URL answer repeated the website's old “上架准备中” wordi
 the just-completed Chrome review submission. Five HTML pages and llms.txt were
 updated to say **v0.1.1 submitted / pending review / not yet published**. The
 existing installation paths remain valid; no unapproved store link was added.
-The six-page static checks and byte-for-byte Skill-mirror checks passed.
+The six-page static checks and byte-for-byte Skill-mirror checks passed. The
+patch was deployed successfully; HTTP read-back of the homepage, agent-install
+and llms.txt confirmed the submitted/pending wording and absence of the old
+preparation phrase.
 
 This fixes an outdated first-party fact. It does not prove that an AI has
 recrawled the change or that natural recommendation has improved. Gemini
 reproducing the Skill command demonstrates a readable explanation, not an
 installed extension.
+
+After deployment, a new independent Gemini named-URL probe completed but
+explicitly lacked browsing/search. It did not verify the updated fact; this is
+retrieval unavailable, not evidence that the website failed. WorkBuddy’s resumed
+reading check did return the corrected store status and exact Skill command,
+with six public source links. 千问 also returned the corrected store state.
+
+千问’s page parser did not expose the installation page’s mirror-link hrefs and
+then guessed an incorrect file path. The canonical links were healthy: all
+three static Skill, helper and verification resources returned HTTP 200. The
+installation tutorial now also displays their full URLs as copyable text for
+readers or chat tools that lose hyperlink addresses. Skill source and mirror
+bytes remain unchanged. 豆包’s explicit access failure and unsupported claims
+are recorded as an inaccurate named-URL answer, rather than a successful
+citation or a reason to invent new product features.
 
 ## Daily follow-up
 
@@ -69,8 +93,8 @@ status, and separate natural / named-URL consumer-AI probes. It does not
 automatically repost, repeat installations, change account/model selections or
 use paid APIs. Authentication and human verification remain actual prerequisites.
 
-The next useful actions are to complete the normal ChatGPT / 豆包 / 千问 sessions
-and repeat their real consumer tests, then observe the store-review outcome and
+The next useful actions are to finish ChatGPT’s normal passkey verification and
+complete its real consumer tests, then observe the store-review outcome and
 whether fresh unseeded searches begin citing the public project. Repeating
 promotional chats is not model training or evidence of an indexing gain.
 
