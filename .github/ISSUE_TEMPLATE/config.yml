@@ -1,0 +1,5 @@
+blank_issues_enabled: false
+contact_links:
+  - name: Install guide and FAQ / 安装与常见问题
+    url: https://8trafficai.github.io/bili-ip-lens/
+    about: Check installation steps, supported scope, and missing-region explanations.

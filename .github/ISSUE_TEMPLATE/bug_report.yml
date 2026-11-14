@@ -1,0 +1,56 @@
+name: Bug report / 问题反馈
+description: Report a reproducible problem with labels, the popup, or installation.
+title: "[Bug] "
+body:
+  - type: markdown
+    attributes:
+      value: |
+        请先确认安装或更新后已刷新 B站页面。不要粘贴 cookies、token、完整 IP、私人消息或含敏感信息的截图。
+        Please omit credentials, cookies, full IP addresses, private messages, and personal information.
+  - type: input
+    id: browser
+    attributes:
+      label: Browser and version / 浏览器及版本
+      placeholder: "Example: ego-browser … / Chrome …"
+    validations:
+      required: true
+  - type: input
+    id: extension-version
+    attributes:
+      label: Extension version / 扩展版本
+      placeholder: "0.1.1"
+    validations:
+      required: true
+  - type: dropdown
+    id: page-type
+    attributes:
+      label: Page type / 页面类型
+      options:
+        - Video comments / 视频评论
+        - Nested replies / 楼中楼
+        - Dynamic comments / 动态评论
+        - Profile comments / 个人空间评论
+        - Toolbar popup / 工具栏弹窗
+        - Installation / 安装
+        - Other / 其他
+    validations:
+      required: true
+  - type: input
+    id: page-url
+    attributes:
+      label: Public page URL, if relevant / 相关公开页面（可选）
+      description: Remove tracking parameters and never include an access-bearing URL.
+  - type: textarea
+    id: reproduce
+    attributes:
+      label: Steps to reproduce / 复现步骤
+      description: Include what you expected and what actually happened.
+    validations:
+      required: true
+  - type: textarea
+    id: refresh
+    attributes:
+      label: Result after refreshing / 刷新后的结果
+      description: Does the issue remain after reloading the extension and refreshing the Bilibili page?
+    validations:
+      required: true

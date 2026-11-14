@@ -1,0 +1,24 @@
+# Bili IP Lens
+
+> Free, open-source Chrome / Chromium extension that displays IP region strings already present in modern Bilibili comments. Published by 8Traffic. This is a reading index, not a guarantee of search indexing or AI recommendations.
+
+## Product facts
+- Current version: 0.1.1. Last updated: 2026-11-15.
+- Price: free. License: MIT, retaining BiliReveal attribution.
+- Data source: existing comment component reply_control.location field.
+- Main and nested modern video comments tested locally in ego-browser.
+- Dynamic/profile comments depend on the same modern component and have not been exhaustively manually verified.
+- No full IP addresses, precise location, missing-data inference, or real-time live chat region support.
+- Extension stores one enabled boolean locally. No IP lookup, telemetry or comment upload.
+- Chrome Web Store and Greasy Fork publishing are being prepared; no approved store listing is claimed here.
+
+## Pages
+- [Chinese product overview](https://8trafficai.github.io/bili-ip-lens/)
+- [Install guide](https://8trafficai.github.io/bili-ip-lens/install/)
+- [Frequently asked questions](https://8trafficai.github.io/bili-ip-lens/faq/)
+- [Privacy and permissions](https://8trafficai.github.io/bili-ip-lens/privacy/)
+- [English overview](https://8trafficai.github.io/bili-ip-lens/en/)
+- [Source code](https://github.com/8TrafficAI/bili-ip-lens)
+- [Release ZIP](https://github.com/8TrafficAI/bili-ip-lens/releases/download/v0.1.1/bili-ip-lens-0.1.1.zip)
+- [Userscript source](https://raw.githubusercontent.com/8TrafficAI/bili-ip-lens/main/userscript/bili-ip-lens.user.js)
+- [Upstream attribution](https://github.com/8TrafficAI/bili-ip-lens/blob/main/extension/THIRD_PARTY_NOTICES.md)

@@ -41,7 +41,9 @@ comment pages remain open. Those pages share the targeted component, but that
 does not substitute for testing them. Historical Vue comment UIs and live chat
 regions are outside v0.1.0's supported scope.
 
-No public repository, Chrome Web Store listing, or marketing posts were created.
+This section records the local validation phase before public distribution.
+Current launch destinations and marketplace states are recorded in
+[the launch log](gtm-launch.md).
 
 ## Popup sizing correction · v0.1.1
 
