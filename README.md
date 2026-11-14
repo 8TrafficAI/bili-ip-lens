@@ -2,11 +2,25 @@
 
 在 B站网页版评论的时间旁，显示 **B站已经提供的 IP 属地**。工具栏一键开关，已加载的评论即时显示或隐藏。
 
-[下载扩展 v0.1.1](https://github.com/8TrafficAI/bili-ip-lens/releases/download/v0.1.1/bili-ip-lens-0.1.1.zip) · [油猴脚本](https://raw.githubusercontent.com/8TrafficAI/bili-ip-lens/main/userscript/bili-ip-lens.user.js) · [产品页与安装教程](https://8trafficai.github.io/bili-ip-lens/) · [English](README.en.md) · [反馈问题](https://github.com/8TrafficAI/bili-ip-lens/issues/new/choose)
+[下载扩展 v0.1.1](https://github.com/8TrafficAI/bili-ip-lens/releases/download/v0.1.1/bili-ip-lens-0.1.1.zip) · [Greasy Fork 油猴版](https://greasyfork.org/zh-CN/scripts/605536) · [让 AI 协助安装](https://8trafficai.github.io/bili-ip-lens/agent-install/) · [产品页](https://8trafficai.github.io/bili-ip-lens/) · [English](README.en.md) · [反馈问题](https://github.com/8TrafficAI/bili-ip-lens/issues/new/choose)
 
 免费、MIT 开源、Manifest V3。当前通过 GitHub 分发，**尚未上架 Chrome Web Store**。
 
 ## 如何安装
+
+### 让有本机工具的 AI Agent 协助
+
+先给支持 Agent Skills 的编码 Agent 安装技能：
+
+```sh
+npx skills add 8TrafficAI/bili-ip-lens --skill bili-ip-lens
+```
+
+然后告诉它：**「安装 Bili IP Lens 并验证 IP 属地开关。」**
+
+技能会引导它校验最新公开 Release 的 ZIP 与 SHA-256、准备独立安装目录，再通过浏览器正常界面加载并验证。macOS/Linux 的文件准备助手需要 `curl` 和 Python 3.8+；Skills CLI 当前需要 Node.js 22.20+。浏览器必要的确认步骤仍需正常完成，不能把「技能已安装」或「文件已准备」当成扩展已经启用。
+
+Codex、WorkBuddy 等 Agent 只有在当前会话提供相应终端／浏览器工具时才能执行；普通 ChatGPT、Gemini 聊天可以阅读说明，不能因此直接操作你的电脑。详见[AI 安装教程](https://8trafficai.github.io/bili-ip-lens/agent-install/)。
 
 ### 下载发行版 ZIP
 
@@ -26,11 +40,11 @@
 
 ### Tampermonkey / 油猴用户脚本
 
-已使用 Tampermonkey 的用户可以打开[仓库中的用户脚本](https://raw.githubusercontent.com/8TrafficAI/bili-ip-lens/main/userscript/bili-ip-lens.user.js)，通过脚本管理器安装。安装后，从脚本管理器图标下的 Bili IP Lens 菜单开启或关闭显示；用户脚本没有独立的 Chrome 工具栏弹窗。扩展版与用户脚本版建议二选一。
+用户脚本已在 [Greasy Fork 发布](https://greasyfork.org/zh-CN/scripts/605536)。已使用 Tampermonkey 的用户可打开脚本页面，点击「安装此脚本」并通过管理器完成安装；也可使用 [GitHub 源码备用入口](https://raw.githubusercontent.com/8TrafficAI/bili-ip-lens/main/userscript/bili-ip-lens.user.js)。安装后，从脚本管理器图标下的 Bili IP Lens 菜单开启或关闭显示；用户脚本没有独立的 Chrome 工具栏弹窗。扩展版与用户脚本版建议二选一。
 
 用户脚本目前完成了 Node VM 行为测试，真实 Tampermonkey 安装、注入与管理器兼容性仍待手工验收。[用户脚本说明](userscript/README.md)
 
-Greasy Fork 和 Chrome Web Store 的上架链接将在实际发布后补充。现有 GitHub 下载入口不代表通过了任一商店审核。
+Chrome Web Store 仍未上架。Greasy Fork 发布与 GitHub 下载不代表 Chrome 商店审核通过。
 
 ## 能做什么
 

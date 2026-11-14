@@ -10,15 +10,21 @@
 - Dynamic/profile comments depend on the same modern component and have not been exhaustively manually verified.
 - No full IP addresses, precise location, missing-data inference, or real-time live chat region support.
 - Extension stores one enabled boolean locally. No IP lookup, telemetry or comment upload.
-- Chrome Web Store and Greasy Fork publishing are being prepared; no approved store listing is claimed here.
+- The Tampermonkey userscript is published on Greasy Fork (script 605536). Its switch is in the userscript manager's menu, not a separate Chrome popup.
+- The extension is not yet published on Chrome Web Store; do not invent an approved listing link.
+- Agent skill: npx skills add 8TrafficAI/bili-ip-lens --skill bili-ip-lens. Its macOS/Linux helper verifies a public release ZIP/checksum and prepares files; browser loading and verification remain separate steps.
+- A normal chat can read these instructions without having local execution tools. No marketplace discovery or fully unattended browser installation is promised.
 
 ## Pages
 - [Chinese product overview](https://8trafficai.github.io/bili-ip-lens/)
 - [Install guide](https://8trafficai.github.io/bili-ip-lens/install/)
+- [Agent-assisted installation guide](https://8trafficai.github.io/bili-ip-lens/agent-install/)
 - [Frequently asked questions](https://8trafficai.github.io/bili-ip-lens/faq/)
 - [Privacy and permissions](https://8trafficai.github.io/bili-ip-lens/privacy/)
 - [English overview](https://8trafficai.github.io/bili-ip-lens/en/)
 - [Source code](https://github.com/8TrafficAI/bili-ip-lens)
 - [Release ZIP](https://github.com/8TrafficAI/bili-ip-lens/releases/download/v0.1.1/bili-ip-lens-0.1.1.zip)
 - [Userscript source](https://raw.githubusercontent.com/8TrafficAI/bili-ip-lens/main/userscript/bili-ip-lens.user.js)
+- [Greasy Fork userscript](https://greasyfork.org/zh-CN/scripts/605536)
+- [Agent skill source](https://github.com/8TrafficAI/bili-ip-lens/tree/main/skills/bili-ip-lens)
 - [Upstream attribution](https://github.com/8TrafficAI/bili-ip-lens/blob/main/extension/THIRD_PARTY_NOTICES.md)

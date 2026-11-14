@@ -2,11 +2,25 @@
 
 A small Manifest V3 extension that displays **the IP region Bilibili already provides** next to a comment's timestamp. A toolbar switch shows or hides the added labels immediately.
 
-[Download extension v0.1.1](https://github.com/8TrafficAI/bili-ip-lens/releases/download/v0.1.1/bili-ip-lens-0.1.1.zip) · [Userscript](https://raw.githubusercontent.com/8TrafficAI/bili-ip-lens/main/userscript/bili-ip-lens.user.js) · [Product page](https://8trafficai.github.io/bili-ip-lens/) · [简体中文](README.md) · [Report a problem](https://github.com/8TrafficAI/bili-ip-lens/issues/new/choose)
+[Download extension v0.1.1](https://github.com/8TrafficAI/bili-ip-lens/releases/download/v0.1.1/bili-ip-lens-0.1.1.zip) · [Greasy Fork userscript](https://greasyfork.org/en/scripts/605536) · [Agent-assisted installation](https://8trafficai.github.io/bili-ip-lens/agent-install/) · [Product page](https://8trafficai.github.io/bili-ip-lens/) · [简体中文](README.md) · [Report a problem](https://github.com/8TrafficAI/bili-ip-lens/issues/new/choose)
 
 Free and MIT licensed. Distributed through GitHub; **not currently listed in the Chrome Web Store**.
 
 ## Install
+
+### Use an AI agent with local tools
+
+Install the instructions into a coding agent that supports Agent Skills:
+
+```sh
+npx skills add 8TrafficAI/bili-ip-lens --skill bili-ip-lens
+```
+
+Then ask: **“Install Bili IP Lens and verify the comment IP-region toggle.”**
+
+The skill guides the agent through release ZIP / SHA-256 verification, preparation of a dedicated directory, normal browser loading, and behavior checks. The file-preparation helper supports macOS/Linux with `curl` and Python 3.8+; the current Skills CLI requires Node.js 22.20+. Required browser confirmations still apply. Installing instructions or preparing files does not enable the browser extension by itself.
+
+Codex, WorkBuddy, or another agent needs the relevant terminal/browser tools in its current session to execute these steps. An ordinary ChatGPT or Gemini chat can read the guide but does not thereby gain access to your computer. See the [agent installation guide](https://8trafficai.github.io/bili-ip-lens/agent-install/).
 
 ### Release ZIP
 
@@ -22,11 +36,11 @@ After an update, reload the extension in the extension manager and refresh exist
 
 ### Tampermonkey userscript
 
-If you already use Tampermonkey, open the [repository userscript](https://raw.githubusercontent.com/8TrafficAI/bili-ip-lens/main/userscript/bili-ip-lens.user.js) to install it through the script manager. Toggle it from the Bili IP Lens entry in the script manager's menu; the userscript has no separate Chrome toolbar popup. Use either the extension or the userscript to keep one source of settings.
+The userscript is [published on Greasy Fork](https://greasyfork.org/en/scripts/605536). If you already use Tampermonkey, open the script page, choose **Install this script**, and complete the manager's installation flow. A [GitHub source fallback](https://raw.githubusercontent.com/8TrafficAI/bili-ip-lens/main/userscript/bili-ip-lens.user.js) is also available. Toggle it from the Bili IP Lens entry in the script manager's menu; the userscript has no separate Chrome toolbar popup. Use either the extension or the userscript to keep one source of settings.
 
 The userscript has Node VM behavior tests. Actual Tampermonkey installation, injection, and manager compatibility still require manual acceptance. See the [userscript guide](userscript/README.md).
 
-Greasy Fork and Chrome Web Store links will be added after actual publication. A GitHub download does not imply review or approval by either marketplace.
+The Chrome Web Store extension is not yet published. Greasy Fork publication and GitHub downloads do not imply Chrome Web Store approval.
 
 ## Features and scope
 
