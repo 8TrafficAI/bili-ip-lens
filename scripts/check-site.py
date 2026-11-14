@@ -79,6 +79,10 @@ for file in sorted(root.rglob('*.html')):
 tree = ElementTree.parse(root / 'sitemap.xml')
 mapped = {node.text for node in tree.findall('.//{http://www.sitemaps.org/schemas/sitemap/0.9}loc')}
 assert mapped == urls, 'Sitemap must match the actual canonical page set'
+for relative in ('SKILL.md', 'scripts/install-extension.sh', 'references/verification.md'):
+    source = root.parent / 'skills' / 'bili-ip-lens' / relative
+    mirror = root / 'skills' / 'bili-ip-lens' / relative
+    assert source.read_bytes() == mirror.read_bytes(), f'Skill text mirror drift: {relative}'
 assert (root / '.nojekyll').exists()
 assert not (root / 'robots.txt').exists(), 'Project-path robots.txt would not control the host root'
 print(f'Static site passed: {len(urls)} pages, canonicals, metadata, JSON-LD, sitemap, local links and assets.')

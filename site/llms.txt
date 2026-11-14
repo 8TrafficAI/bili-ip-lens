@@ -28,3 +28,5 @@
 - [Greasy Fork userscript](https://greasyfork.org/zh-CN/scripts/605536)
 - [Agent skill source](https://github.com/8TrafficAI/bili-ip-lens/tree/main/skills/bili-ip-lens)
 - [Upstream attribution](https://github.com/8TrafficAI/bili-ip-lens/blob/main/extension/THIRD_PARTY_NOTICES.md)
+
+- [Plain text installation Skill](https://8trafficai.github.io/bili-ip-lens/skills/bili-ip-lens/SKILL.md): Exact static mirror of the repository Skill, with its helper and verification references at relative paths. Reading is not execution.
