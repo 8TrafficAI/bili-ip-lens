@@ -38,7 +38,9 @@ After an update, reload the extension in the extension manager and refresh exist
 
 The userscript is [published on Greasy Fork](https://greasyfork.org/en/scripts/605536). If you already use Tampermonkey, open the script page, choose **Install this script**, and complete the manager's installation flow. A [GitHub source fallback](https://raw.githubusercontent.com/8TrafficAI/bili-ip-lens/main/userscript/bili-ip-lens.user.js) is also available. Toggle it from the Bili IP Lens entry in the script manager's menu; the userscript has no separate Chrome toolbar popup. Use either the extension or the userscript to keep one source of settings.
 
-The userscript has Node VM behavior tests and was saved as version 0.1.1 through Tampermonkey's normal manager interface. Actual comment injection, menu toggles, and manager compatibility still require manual acceptance; saving the script does not establish that its behavior works. See the [userscript guide](userscript/README.md).
+The release userscript 0.1.1 has Node VM tests and was tested separately in ego-browser with Tampermonkey 5.5.1: all 18 region-bearing comments in the tested video's latest list had matching labels. The menu switch removed all labels and restored all 18; reopening the menu retained each saved state. The MV3 extension was disabled during this test. This validates one video scenario, not other managers, dynamic feeds or profile pages. See the [validation record](docs/validation-2026-11-15.md#real-tampermonkey-validation--2026-11-15) and [userscript guide](userscript/README.md).
+
+If no labels appear after installation, check that the manager is globally Enabled, the script is enabled, and the browser extension details grant the normal **Allow User Scripts** permission. Refresh Bilibili after first installation. That permission was already enabled in the tested profile and did not need changing.
 
 The Chrome Web Store extension is not yet published. Greasy Fork publication and GitHub downloads do not imply Chrome Web Store approval.
 

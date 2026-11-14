@@ -56,3 +56,44 @@ Verified by reloading the installed extension and opening its actual toolbar
 popup: horizontal title and setting labels, intact switch, complete footer,
 and no long scrollbar. OFF persisted across closing and reopening the popup;
 the final state was restored to ON. Version 0.1.1 is installed in ego-browser.
+
+
+## Real Tampermonkey validation · 2026-11-15
+
+Environment: ego-browser (Chromium), Tampermonkey **5.5.1**, released userscript
+**0.1.1**, video `https://www.bilibili.com/video/BV1xx411c7mD/`, latest comments.
+The published script was saved through the manager's normal **New Userscript**
+editor. This was a separate userscript test, not a repeat of the MV3 test above.
+
+The MV3 Bili IP Lens extension was OFF during the test, and the manager's original
+global Disabled state was temporarily switched to Enabled. The browser extension
+detail's **Allow User Scripts** permission was already true and was not changed.
+After refreshing the video and selecting latest comments:
+
+- All **18** comments carrying a region field had **18** matching userscript
+  labels; their text matched the supplied regions. MV3 extension-label count was **0**.
+- The actual toolbar script-manager menu's OFF action changed userscript labels
+  from **18 to 0** without refreshing. Reopening the menu still showed OFF.
+- The menu's ON action restored **18 / 18** matching labels without refreshing.
+  Reopening the menu showed ON.
+- Initial older hot comments without a region field were left unchanged. That
+  initial empty-label observation was not classified as an injection failure.
+
+After validation, the operator restored the original browser setup: Tampermonkey
+global state Disabled, its browser extension OFF, and the MV3 Bili IP Lens
+extension ON (version 0.1.1 confirmed). The Allow User Scripts permission stayed
+true, and other userscripts were not changed.
+
+The operator retained a sanitized local record in the ignored
+`.private/tampermonkey-real-validation.json`; no account or browser-session data
+is part of this public record. The sample demonstrates this manager version's
+normal installation, comment injection, immediate menu toggle and saved state in
+one video scenario. It does not establish all-manager compatibility, cross-tab
+synchronization, dynamic/profile-page acceptance, full-IP lookup or live-chat
+region support. The 18 comments are a local sample, not users or a success-rate
+benchmark.
+
+Installation troubleshooting: the manager must be globally **Enabled**, the script
+itself must be enabled, and the browser's normal **Allow User Scripts** permission
+must permit execution. Refresh already-open Bilibili pages after first installing
+the script. Do not infer missing-region data from a blank label alone.

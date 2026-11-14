@@ -106,7 +106,7 @@ B站网页版怎么显示评论 IP 属地？一个可开关的开源小工具
 已安装 Tampermonkey 等用户脚本管理器的用户，可以直接到 Greasy Fork 点击“安装此脚本”：
 https://greasyfork.org/zh-CN/scripts/605536
 
-油猴版从脚本管理器的 Bili IP Lens 菜单切换，不使用扩展版的工具栏弹窗。建议扩展版和油猴版二选一。脚本已完成 Node VM 行为测试；真实 Tampermonkey 的安装与注入仍在补充验收，发布本身不等于所有环境都已验证。
+油猴版从脚本管理器的 Bili IP Lens 菜单切换，不使用扩展版的工具栏弹窗。建议扩展版和油猴版二选一。2026-11-15 已在 ego-browser / Tampermonkey 5.5.1 独立实测：18 条带地区的最新评论均显示匹配标签；真实菜单 OFF 后为 0，ON 后恢复 18，重新打开菜单仍保留状态。这个本地样本不代表其他管理器、跨标签页同步、动态或空间页都已验收。
 
 哪些场景验证过？
 
@@ -138,6 +138,8 @@ AI 安装教程：https://8trafficai.github.io/bili-ip-lens/agent-install/
 
 这篇说明使用 AI 协助整理；功能、来源和测试范围以公开源码与验证记录为准。
 
+Published update read-back on 2026-11-15 confirmed the Tampermonkey 5.5.1 / 18-comment paragraph and removal of the earlier pending-injection wording. The native AI-assisted declaration was selected again for the update.
+
 ## Publication log
 
 | Destination | Status | Public URL | Verification |
@@ -155,7 +157,9 @@ AI 安装教程：https://8trafficai.github.io/bili-ip-lens/agent-install/
 
 ## Indexing and AI retrieval execution
 
-- Google Search Console URL-prefix property ownership verified for the project URL via an HTML meta tag. Sitemap submission was accepted, but the initial table reports “无法抓取” with zero discovered pages; investigation remains open. Verification and submission are not proof of indexing.
+- Google Search Console URL-prefix ownership verified. The homepage URL inspection now reports **indexed**, with Googlebot smartphone crawl at 2026-11-15 05:19:14 Asia/Shanghai and the correct canonical. This is homepage index inclusion only, not a ranking or AI citation result.
+- Google’s live test successfully fetched the exact sitemap URL and reported crawl/index allowed. A normal resubmission was accepted; the sitemap report still shows “无法抓取” and zero discovered pages. No site defect was found, and the reporting discrepancy remains open.
+- The AI installation guide was not indexed when inspected; its indexing request was accepted into the priority crawl queue. See the [search indexing record](search-indexing-2026-11-15.md) for the separate evidence and limits.
 - IndexNow returned HTTP 202 for the first five URLs; the later six-page submission returned HTTP 200. Acknowledgement means accepted for processing, not index inclusion.
 - [AI retrieval baseline](geo-baseline-2026-11-15.md) separates natural discovery from supplied-URL content reading, and completed answers from transport/authentication failures.
 - [Engine playbook](geo-engine-playbook.md) describes official crawler/search paths and the limits of llms.txt and direct consumer chat prompting.

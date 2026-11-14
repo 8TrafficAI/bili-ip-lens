@@ -3,8 +3,10 @@
 Version: 0.1.1 · Prepared: 2026-11-15
 
 Status: package and listing materials prepared; the developer dashboard is accessible.
-Business/trader publisher verification is in progress. The package has not yet been
-uploaded or submitted for review, and no public store listing exists.
+The organization payment profile is saved and an authorized public phone has been
+provided. Automatic D&B organization matching failed; the platform's normal
+manual-document verification route is available, with document upload pending.
+The extension has not been submitted for review and no public store listing exists.
 
 ## Listing
 
@@ -82,6 +84,9 @@ No payment, external account, or API key is required by the extension.
 
 Item ID / listing URL: pending publisher verification and submission.
 Review state: not yet submitted.
-The owner confirmed business use and agreed to the required trader commitment;
-organization profile verification is a separate platform prerequisite. Private
-identity documents, account IDs, and contact address details are not recorded here.
+The owner confirmed business use and agreed to the required trader commitment.
+Organization profile entry and the public-phone prerequisite are no longer the
+current blockers: automatic organization matching failed and manual verification
+is pending. The official fallback requests business registration and address
+evidence; no documents have yet been uploaded. Private identity documents,
+business identifiers, phone/contact values and account IDs are not recorded here.

@@ -42,7 +42,9 @@ Codex、WorkBuddy 等 Agent 只有在当前会话提供相应终端／浏览器�
 
 用户脚本已在 [Greasy Fork 发布](https://greasyfork.org/zh-CN/scripts/605536)。已使用 Tampermonkey 的用户可打开脚本页面，点击「安装此脚本」并通过管理器完成安装；也可使用 [GitHub 源码备用入口](https://raw.githubusercontent.com/8TrafficAI/bili-ip-lens/main/userscript/bili-ip-lens.user.js)。安装后，从脚本管理器图标下的 Bili IP Lens 菜单开启或关闭显示；用户脚本没有独立的 Chrome 工具栏弹窗。扩展版与用户脚本版建议二选一。
 
-用户脚本已完成 Node VM 行为测试，并通过 Tampermonkey 正常管理器界面保存为 0.1.1。真实评论注入、菜单切换与管理器兼容性仍待手工验收；保存成功不等于功能验证通过。[用户脚本说明](userscript/README.md)
+用户脚本已完成 Node VM 行为测试，并在 ego-browser + Tampermonkey 5.5.1 中独立实测发布版 0.1.1：视频最新列表的 18 条带地区评论均显示匹配标签；菜单关闭后为 0 条，重新开启恢复 18 条，重开菜单保留已保存的开关状态。测试时 MV3 扩展停用；此结果只适用于本次视频场景，不代表其他管理器、动态或空间页已验收。[验证记录](docs/validation-2026-11-15.md#real-tampermonkey-validation--2026-11-15) · [用户脚本说明](userscript/README.md)
+
+油猴安装后没有显示时，确认管理器的全局状态为 Enabled、脚本已启用，并在浏览器扩展详情中检查正常的「允许运行用户脚本 / Allow User Scripts」许可；首次安装后刷新 B站页面。本次测试中该浏览器许可原本已开启，无需更改。
 
 Chrome Web Store 仍未上架。Greasy Fork 发布与 GitHub 下载不代表 Chrome 商店审核通过。
 

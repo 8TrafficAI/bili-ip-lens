@@ -42,10 +42,10 @@ This is an evidence ledger, not a promise that every browser, page, script manag
 | The userscript has a script-manager menu toggle, GM storage, and optional value-change handling; it has no independent extension popup | `userscript/settings.js:18-35`, `userscript/settings.js:38-65`, `userscript/README.md:11-18` | verified |
 | The userscript source is self-contained, with three domain matches and no remote @require | `userscript/bili-ip-lens.user.js:13-31`, `tests/userscript.test.mjs:180-193` | verified |
 | Userscript rendering, menu, persistence, isolation, and initialization behavior have VM test coverage | `tests/userscript.test.mjs:5`, `tests/userscript.test.mjs:81-110`, `tests/userscript.test.mjs:113-193` | verified |
-| The userscript has passed real Tampermonkey comment injection and menu-toggle acceptance | `README.md:45` records a normal manager save of 0.1.1, with injection/menu acceptance still open; saving is not a behavior playthrough | unverifiable |
+| Released userscript 0.1.1 has passed real Tampermonkey 5.5.1 comment injection and menu-toggle acceptance in ego-browser on one video latest list | `docs/validation-2026-11-15.md:61-99` records 18 matching region-bearing labels, OFF=0, ON=18, reopened-menu state and MV3 isolation | verified |
 | Modern comment integration is adapted from MaxChang3/BiliReveal; the original MIT copyright and permission notice are retained | `extension/page.js:1-5`, `extension/THIRD_PARTY_NOTICES.md:5-34`, `userscript/bili-ip-lens.user.js:55-88` | verified |
 | Source is released under MIT with upstream notices preserved | `LICENSE:1-21`, `extension/THIRD_PARTY_NOTICES.md:14-34` | verified |
-| The userscript is publicly published on Greasy Fork as script 605536 | `README.md:43`; `docs/gtm-launch.md:148` records the public detail/install-link read-back | verified |
+| The userscript is publicly published on Greasy Fork as script 605536 | `README.md:43`; `docs/gtm-launch.md:150` records the public detail/install-link read-back | verified |
 | The extension is approved and public on Chrome Web Store | `store/chrome-web-store.md:5-7,83-87` records publisher verification only, with no package submission or public listing | contradicted |
 | Product site has no third-party analytics script; the local demo only changes illustrative DOM elements | `site/assets/demo.js:1-14`, local resource references in `site/index.html:8` and its closing script tag; hosting requests are separately disclosed in `site/privacy/index.html:14` | verified |
 | The sample commenters are UI illustrations, not testimonials | `site/index.html:17` explicitly labels the demo “界面示例 · 非真实评论” and its sample users | verified |
@@ -63,7 +63,7 @@ A test definition proves the intended VM check exists; it is not itself proof of
 | “First / original / invented Bilibili IP-region display” | Modern integration is adapted from BiliReveal. |
 | “Official Bilibili extension” | This is an independent project with explicit non-affiliation. |
 | “Find a full IP / precise location / live-chat location” | The implementation only displays an existing comment region field. |
-| “Works everywhere / every Chromium browser / every userscript manager” | Manual acceptance is narrower; the userscript only has VM evidence so far. |
+| “Works everywhere / every Chromium browser / every userscript manager” | Userscript acceptance covers Tampermonkey 5.5.1 in one ego-browser video scenario; other managers and page types need separate checks. |
 | “Approved on Chrome Web Store / live on Greasy Fork” before a public listing is verified | Submission, review, and public availability are separate states. |
 | Ratings, reviews, awards, adoption, or conversion numbers without a dated source | No such evidence exists in this launch tree. |
 | “Guaranteed Google / AI visibility” | Discoverability files and metadata do not establish ranking or citation outcomes. |

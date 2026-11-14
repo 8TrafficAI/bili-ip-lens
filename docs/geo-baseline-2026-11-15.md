@@ -33,10 +33,10 @@ respective sections; they are not silently pooled with failed adapter attempts.
 
 | Provider | Stage A access / submission attempts | Completed natural answers (n) | Product recall / cited project URL | Actual observation | Model / UI label |
 |---|---:|---:|---|---|---|
-| ChatGPT | 2 adapter attempts; direct UI inspected, unsent | 0 | Not assessed | Adapter failures followed by a direct ego-browser page showing login choices and no composer. | Unknown |
+| ChatGPT | 2 adapter attempts; direct UI and existing Google SSO attempted, unsent | 0 | Not assessed | Ordinary SSO continued to an OpenAI passkey challenge; no prompt was submitted. | Unknown |
 | Gemini | 3 failed adapter attempts; 1 completed direct-browser chat | 1 | No spontaneous Bili IP Lens mention; no project URL cited (0/1) | Direct browser answer recommended BiliReveal, Bilibili-Evolved and ShowBilibiliLocation. | Hydrogen (visible UI label) |
 | 豆包 / Doubao | 1 adapter attempt; 2 ordinary guest UI submissions | 0 | Not assessed | Adapter timed out. Both guest submissions returned to the empty homepage; the second showed a logout-related URL flag. No answer completed. | 快速 mode label; backend model unknown |
-| 千问 / Qianwen | 1 adapter attempt; direct guest UI inspected, unsent | 0 | Not assessed | Adapter had stale-page failure. The guest composer was available, but shared-space user control stopped execution before submission. | Qwen-快速 UI label; backend model unknown |
+| 千问 / Qianwen | 1 adapter attempt; 1 completed ordinary guest response after control resumed | 0 usable retrieval answers | Not assessed | The natural question received a completed refusal with no sources or observed search. | Qwen-快速 UI label; backend model unknown |
 | WorkBuddy 5.11.3 | 1 native new task | 1 | No spontaneous Bili IP Lens mention; no project URL cited (0/1) | Search completed; this is one sample only. | 均衡 (GLM-5.3), visible response footer |
 
 An adapter's preliminary `Login: Yes` status is insufficient evidence of a usable
@@ -277,3 +277,77 @@ not establish organic search discovery, global Skill installation, persisted
 extension preparation, a new browser installation, or behavior verification in
 this run. No global Skill or browser profile was changed; temporary public-file
 downloads were the only requested file changes.
+
+
+## Resumed guest Stage A: Qianwen refusal
+
+After the shared task space returned to agent control, Qianwen's unchanged
+**Qwen-快速** guest composer accepted the exact natural prompt above. It produced
+a completed response:
+
+> 你好，我无法回答这个问题，我们换一个话题聊聊吧。
+
+The stop-answer button returned to the send-message state. No source links or
+search results were shown. This is **one completed refusal and zero usable
+retrieval answers**; product recall is not assessed from the refusal, and it is
+not included in a retrieval-answer mention-rate denominator. The page remained
+logged out, and no model or account was changed. The sanitized answer is stored
+in `.private/geo-browser-2026-11-15/qianwen-natural.json`.
+
+## ChatGPT existing-SSO access follow-up
+
+Following authorization to use the existing personal Google login, the ordinary
+Continue with Google flow was attempted. After selecting the existing identity,
+OpenAI displayed a passkey challenge. No credential, passkey, recovery method,
+second factor, or alternative account was used. No ChatGPT prompt was submitted,
+so there is still **no completed ChatGPT retrieval sample**. This is an access
+blocker, not a product-recall miss. The local sanitized record is
+`.private/geo-browser-2026-11-15/chatgpt-sso.json`; no authentication URL or account
+contact information is retained in it.
+
+
+## Qianwen guest Stage B: supplied-URL refusal
+
+In a separate new chat, the four public sources—the product homepage, GitHub
+repository, Greasy Fork script 605536, and repository `SKILL.md`—were supplied
+for direct factual verification. The guest session and **Qwen-快速** mode were
+unchanged. The prompt requested actual body access, explicit access failures,
+feature/data/license/install checks, and no invented Skill commands. It did not
+ask the model to install, log in, download, or execute local commands.
+
+The completed answer again contained only:
+
+> 你好，我无法回答这个问题，我们换一个话题聊聊吧。
+
+No returned sources, page-specific facts, web-search evidence or Skill text were
+shown. The four clickable URLs were part of the **user message**, so they do not
+count as assistant citations or successful content access. This is **one
+completed supplied-URL refusal and zero usable source-verification answers**,
+not a four-source access check, natural discovery, or proof that the pages are
+unreadable. Source access remains unverified. No further prompt was attempted to
+work around the refusal. The sanitized record is
+`.private/geo-browser-2026-11-15/qianwen-directed.json`.
+
+## Gemini static HTML follow-up: installation instructions readable
+
+A third separate Gemini conversation kept the visible **Hydrogen** mode and
+provided the public Agent installation HTML page plus the static Skill text
+mirror and its two relative source references. It requested reading only, not
+command execution. The completed answer reported successful reading of
+[the HTML installation guide](https://8trafficai.github.io/bili-ip-lens/agent-install/),
+but fetch/access failures for the mirrored `SKILL.md`, helper shell file, and
+verification Markdown. Those three source files were not reported as read.
+
+From the accessible HTML it accurately reproduced the Skills CLI command,
+the one-sentence invocation, required local tools, ordinary browser loading,
+and the difference between dry-run validation, prepared files, a loaded
+extension, and behavior verification. This is one successful supplied-HTML
+instruction-reading sample, with three source-file reads unsuccessful in the
+engine's report. It is not successful reading of the entire Skill package,
+local execution, organic discovery, or a recommendation improvement.
+
+The sanitized answer is `.private/gemini-skill-mirror.json`. Access statements
+come from the model's completed answer and page-specific facts; no independent
+provider-side HTTP trace was available. The earlier GitHub and static-text
+access failures remain in the record rather than being overwritten by this
+HTML result. WorkBuddy's actual download/review/dry-run is separate evidence.
