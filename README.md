@@ -42,7 +42,7 @@ Codex、WorkBuddy 等 Agent 只有在当前会话提供相应终端／浏览器�
 
 用户脚本已在 [Greasy Fork 发布](https://greasyfork.org/zh-CN/scripts/605536)。已使用 Tampermonkey 的用户可打开脚本页面，点击「安装此脚本」并通过管理器完成安装；也可使用 [GitHub 源码备用入口](https://raw.githubusercontent.com/8TrafficAI/bili-ip-lens/main/userscript/bili-ip-lens.user.js)。安装后，从脚本管理器图标下的 Bili IP Lens 菜单开启或关闭显示；用户脚本没有独立的 Chrome 工具栏弹窗。扩展版与用户脚本版建议二选一。
 
-用户脚本目前完成了 Node VM 行为测试，真实 Tampermonkey 安装、注入与管理器兼容性仍待手工验收。[用户脚本说明](userscript/README.md)
+用户脚本已完成 Node VM 行为测试，并通过 Tampermonkey 正常管理器界面保存为 0.1.1。真实评论注入、菜单切换与管理器兼容性仍待手工验收；保存成功不等于功能验证通过。[用户脚本说明](userscript/README.md)
 
 Chrome Web Store 仍未上架。Greasy Fork 发布与 GitHub 下载不代表 Chrome 商店审核通过。
 

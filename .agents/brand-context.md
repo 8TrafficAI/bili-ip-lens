@@ -5,6 +5,8 @@ Code baseline: `9f779ca` plus the current publication working tree (README, site
 Final publication commit: to be recorded by the launch operator after committing this working tree.  
 Product version: 0.1.1. A later implementation change requires rechecking the affected rows.
 
+Publication-status follow-up: 2026-11-15, reviewed at `f025d76` plus the launch working tree. The original code-review baseline above is retained; current destination and userscript-acceptance rows below supersede their pre-publication states. See [the dated claim check](../docs/claim-check-2026-11-15.md).
+
 This is an evidence ledger, not a promise that every browser, page, script manager, or marketplace has been accepted. Source paths and line numbers refer to the working tree reviewed on the date above. States are **verified**, **unverifiable**, or **contradicted**.
 
 ## Functional facts
@@ -40,10 +42,11 @@ This is an evidence ledger, not a promise that every browser, page, script manag
 | The userscript has a script-manager menu toggle, GM storage, and optional value-change handling; it has no independent extension popup | `userscript/settings.js:18-35`, `userscript/settings.js:38-65`, `userscript/README.md:11-18` | verified |
 | The userscript source is self-contained, with three domain matches and no remote @require | `userscript/bili-ip-lens.user.js:13-31`, `tests/userscript.test.mjs:180-193` | verified |
 | Userscript rendering, menu, persistence, isolation, and initialization behavior have VM test coverage | `tests/userscript.test.mjs:5`, `tests/userscript.test.mjs:81-110`, `tests/userscript.test.mjs:113-193` | verified |
-| The userscript has passed a real Tampermonkey installation and injection playthrough | No such acceptance record; `README.md:31` explicitly says this remains open | unverifiable |
+| The userscript has passed real Tampermonkey comment injection and menu-toggle acceptance | `README.md:45` records a normal manager save of 0.1.1, with injection/menu acceptance still open; saving is not a behavior playthrough | unverifiable |
 | Modern comment integration is adapted from MaxChang3/BiliReveal; the original MIT copyright and permission notice are retained | `extension/page.js:1-5`, `extension/THIRD_PARTY_NOTICES.md:5-34`, `userscript/bili-ip-lens.user.js:55-88` | verified |
 | Source is released under MIT with upstream notices preserved | `LICENSE:1-21`, `extension/THIRD_PARTY_NOTICES.md:14-34` | verified |
-| A Chrome Web Store or Greasy Fork listing has been approved and is public | No approved listing URL is recorded; status remains preparation/submission in `README.md:33`, `docs/gtm-launch.md:129-130` | unverifiable |
+| The userscript is publicly published on Greasy Fork as script 605536 | `README.md:43`; `docs/gtm-launch.md:148` records the public detail/install-link read-back | verified |
+| The extension is approved and public on Chrome Web Store | `store/chrome-web-store.md:5-7,83-87` records publisher verification only, with no package submission or public listing | contradicted |
 | Product site has no third-party analytics script; the local demo only changes illustrative DOM elements | `site/assets/demo.js:1-14`, local resource references in `site/index.html:8` and its closing script tag; hosting requests are separately disclosed in `site/privacy/index.html:14` | verified |
 | The sample commenters are UI illustrations, not testimonials | `site/index.html:17` explicitly labels the demo “界面示例 · 非真实评论” and its sample users | verified |
 | JSON-LD contains basic SoftwareApplication/Offer facts, with a zero price and no invented rating/review | `site/index.html:9` and the corresponding schema line in each of the four subpages | verified |

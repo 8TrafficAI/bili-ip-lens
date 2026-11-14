@@ -38,7 +38,7 @@ After an update, reload the extension in the extension manager and refresh exist
 
 The userscript is [published on Greasy Fork](https://greasyfork.org/en/scripts/605536). If you already use Tampermonkey, open the script page, choose **Install this script**, and complete the manager's installation flow. A [GitHub source fallback](https://raw.githubusercontent.com/8TrafficAI/bili-ip-lens/main/userscript/bili-ip-lens.user.js) is also available. Toggle it from the Bili IP Lens entry in the script manager's menu; the userscript has no separate Chrome toolbar popup. Use either the extension or the userscript to keep one source of settings.
 
-The userscript has Node VM behavior tests. Actual Tampermonkey installation, injection, and manager compatibility still require manual acceptance. See the [userscript guide](userscript/README.md).
+The userscript has Node VM behavior tests and was saved as version 0.1.1 through Tampermonkey's normal manager interface. Actual comment injection, menu toggles, and manager compatibility still require manual acceptance; saving the script does not establish that its behavior works. See the [userscript guide](userscript/README.md).
 
 The Chrome Web Store extension is not yet published. Greasy Fork publication and GitHub downloads do not imply Chrome Web Store approval.
 

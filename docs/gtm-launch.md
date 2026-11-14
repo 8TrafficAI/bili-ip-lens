@@ -57,13 +57,15 @@ These are qualitative search intents, not measured search volumes. Do not invent
 - Keep compatibility claims tied to the actual validation record.
 - Search indexing, ranking, and AI citation results remain unmeasured until checked after publication.
 
-## X launch copy — prepared, not yet a publication record
+## X launch copy — published
 
-> 做了个小插件 Bili IP Lens：在 B站网页版评论旁显示平台已有的 IP 属地，工具栏一键开关。
+> 做了个小插件 Bili IP Lens：给 B站网页版评论显示已有的 IP 属地，一键开关。
 >
-> 免费开源，不额外查询 IP，不带 SC 功能。已在 ego-browser 验证；暂未上架 Chrome 商店。
+> 免费开源，不额外查询 IP、不上传数据，也不带 SC 功能。评论接入改编自 BiliReveal（MIT）。
 >
-> 下载与安装：https://8trafficai.github.io/bili-ip-lens/
+> 下载 Chrome 扩展 / 油猴脚本：
+> https://8trafficai.github.io/bili-ip-lens/
+
 
 If a follow-up is useful:
 
@@ -71,67 +73,94 @@ If a follow-up is useful:
 
 Use the publisher's real maker identity; do not describe the product as an independent recommendation.
 
-## Zhihu article — prepared, not yet a publication record
+## Zhihu article — published
 
 ### Title
 
-B站网页版怎么显示评论 IP 属地？我们做了一个可开关的开源扩展
+B站网页版怎么显示评论 IP 属地？一个可开关的开源小工具
 
 ### Body
 
-我们做了一个小型浏览器扩展，叫 Bili IP Lens。用途很具体：把 B站已经放在评论数据里的 IP 属地，显示在评论时间旁边，再给它加一个随时可以关闭的开关。
+我们在 8Traffic 做了一个小工具，叫 Bili IP Lens。用途很具体：在 B站网页版评论时间旁，显示平台已经提供的 IP 属地，再给它加一个随时可以关闭的开关。下面是开发者自己的功能与安装说明。
 
-它不是查 IP 的工具。你看到的是 B站为某条评论提供的地区字符串，不是完整 IP 地址，也不是精确定位。没有该字段的评论会保持原样，不会猜一个地区填上去。
+它显示的是什么？
 
-做这个版本的起点，是想把评论属地功能单独留下来。Bili IP Lens 只处理评论属地，不附带 Super Chat 卡片或其他直播叠层。工具栏会显示 ON / OFF；点击图标，可以在弹窗里打开或关闭显示。已经加载的评论会即时变化，不需要为了切换开关刷新整页。
+它读取的是 B站为某条评论提供的地区字符串，不是完整 IP 地址，也不是精确定位。没有该字段的评论会保持原样，不会猜一个地区填上去。现代评论接入方式改编自 MaxChang3 的 BiliReveal，MIT 版权与许可完整保留。
 
-**怎么安装？**
+做这个版本的起点，是想把评论属地功能单独留下来。Bili IP Lens 只处理评论属地，不带 Super Chat 卡片或其他直播叠层。工具栏显示 ON / OFF；点击图标，可以在弹窗里切换。已经加载的评论会即时变化，切换时不需要刷新整页。
 
-目前通过 GitHub 分发，还没有上架 Chrome Web Store。
+怎么安装 Chrome 扩展？
 
-1. 下载发行版 ZIP，完整解压到固定文件夹。
-2. 在地址栏打开 chrome://extensions，开启开发者模式。
-3. 点击“加载已解压的扩展程序”，选择解压后直接含 manifest.json 的文件夹。
-4. 把插件固定到工具栏，刷新已打开的 B站页面。
-5. 打开视频评论区，试一下“显示 IP 属地”开关。
+目前通过 GitHub 发行版分发，Chrome Web Store 还没有审核上线。
 
-如果你克隆的是源码仓库，第 3 步应选择仓库里的 extension 文件夹。发行版 ZIP 和源码目录的层级不同，这是最容易选错的地方。
+1. 从产品页下载发行版 ZIP，完整解压到固定文件夹。
+2. 打开 chrome://extensions，开启开发者模式。
+3. 点击“加载已解压的扩展程序”，选择直接包含 manifest.json 的解压文件夹。
+4. 固定插件图标，刷新已经打开的 B站页面。
+5. 展开视频评论区，试一下“显示 IP 属地”开关。
 
-另有单独的油猴用户脚本版本，从脚本管理器的 Bili IP Lens 菜单切换，不使用扩展版的工具栏弹窗。该版本目前完成 Node VM 行为测试，真实 Tampermonkey 安装和注入仍待手工验收；Chrome 商店和 Greasy Fork 的实际上架状态应以发布记录为准。
+如果克隆的是源码仓库，第 3 步选择仓库里的 extension 子目录。发行版 ZIP 根目录与源码目录的层级不同，这是最容易选错的地方。
 
-**哪些场景验证过？**
+油猴版也已发布
 
-我们在 ego-browser 里检查了现代视频主评论、楼中楼、评论排序、展开回复、页面刷新和开关持久化。v0.1.1 还修正了真实工具栏弹窗被挤窄的问题，并重新检查了关闭、重新打开后的尺寸和状态。
+已安装 Tampermonkey 等用户脚本管理器的用户，可以直接到 Greasy Fork 点击“安装此脚本”：
+https://greasyfork.org/zh-CN/scripts/605536
 
-动态与个人空间使用同款现代评论组件时，是当前实现的接入目标，但这些页面还没有分别完成完整手工验收。历史 Vue 评论界面暂不支持。直播实时弹幕的 IP 属地也不在支持范围内。
+油猴版从脚本管理器的 Bili IP Lens 菜单切换，不使用扩展版的工具栏弹窗。建议扩展版和油猴版二选一。脚本已完成 Node VM 行为测试；真实 Tampermonkey 的安装与注入仍在补充验收，发布本身不等于所有环境都已验证。
 
-**数据会发到哪里？**
+哪些场景验证过？
 
-扩展只声明 storage 权限，用来保存一个开关；脚本匹配三个 B站域名，在页面里读取已有的地区字段。扩展没有额外接口请求、服务器、遥测或第三方 IP 查询，不上传评论或浏览数据。B站网页本身的网络活动不属于扩展新增的请求。
+我们在 ego-browser 中检查了新版视频主评论、楼中楼、评论排序、展开回复、刷新和开关持久化。一次本地记录里，35 条带地区字段的主评论与回复均显示对应标签。v0.1.1 也修正了真实工具栏弹窗被挤窄的问题，并重新检查了尺寸和状态。
 
-**代码从哪里来？**
+动态和个人空间使用同款新版评论组件时，是当前实现的接入目标，但尚未逐场景完成完整手工验收。历史 Vue 评论界面暂不支持。直播实时弹幕的 IP 属地也不在支持范围内；本工具不能替你关闭其他扩展添加的 SC 卡片。
 
-现代评论组件的接入方式改编自 MaxChang3 的 BiliReveal。原作者版权和 MIT 许可完整保留。Bili IP Lens 在这个基础上做了独立 MV3 包装、即时开关、工具栏状态、专用标签和生命周期处理。
+隐私与权限
 
-项目是免费 MIT 开源的，也不是 B站官方产品。想试用、检查实现或反馈兼容性问题，可以从这里开始：
+Chrome 扩展只声明 storage 权限来保存开关，内容脚本匹配 www、t、space 三个 B站域名。扩展没有新增接口请求、服务器、遥测或第三方 IP 查询，不上传评论或浏览数据。B站网页自身的网络活动仍由 B站决定。
 
+也可以让 AI Agent 协助安装
+
+我们提供了能让编码 Agent 理解安装流程的 Skill。在目标项目中运行：
+
+npx skills add 8TrafficAI/bili-ip-lens --skill bili-ip-lens
+
+随后告诉有终端与浏览器工具的 Agent：“安装 Bili IP Lens 并验证 IP 属地开关。”它可以校验公开发行包、准备文件，并通过正常浏览器界面加载和验证。普通聊天窗口不会因此自动获得操作电脑的能力，浏览器必要确认也仍需完成。
+
+AI 安装教程：https://8trafficai.github.io/bili-ip-lens/agent-install/
+
+来源与反馈
+
+项目免费，采用 MIT License，与哔哩哔哩没有官方隶属关系。现代评论接入改编自 BiliReveal，我们在此基础上增加了独立 MV3 包装、即时开关、工具栏状态和生命周期处理。
+
+上游项目：https://github.com/maxchang3/BiliReveal
 产品页与安装教程：https://8trafficai.github.io/bili-ip-lens/
-
 源码与问题反馈：https://github.com/8TrafficAI/bili-ip-lens
+
+这篇说明使用 AI 协助整理；功能、来源和测试范围以公开源码与验证记录为准。
 
 ## Publication log
 
 | Destination | Status | Public URL | Verification |
 | --- | --- | --- | --- |
-| GitHub repository | Pending execution | To record after creation | Check anonymous public access |
-| GitHub release v0.1.1 | Pending execution | To record after release | Check ZIP download and checksum |
-| Repository userscript | Pending execution | To record after publication | Check raw source and script-manager install flow |
-| Greasy Fork | Pending submission | To record after publication | Check public script page and install link |
-| Chrome Web Store | Pending submission | To record after review | Distinguish submitted, under review, and publicly listed |
-| Product page | Pending deployment | To record after deployment | Check HTTP response, canonical, links, mobile layout |
-| X | Prepared copy | To record after publishing | Check resulting public post URL |
-| Zhihu | Prepared copy | To record after publishing | Check resulting public article URL |
+| GitHub repository | Public | https://github.com/8TrafficAI/bili-ip-lens | Anonymous public source access checked |
+| GitHub release v0.1.1 | Published | https://github.com/8TrafficAI/bili-ip-lens/releases/tag/v0.1.1 | Anonymous ZIP SHA-256 matched local artifact |
+| Repository userscript | Public | https://raw.githubusercontent.com/8TrafficAI/bili-ip-lens/main/userscript/bili-ip-lens.user.js | Anonymous source HTTP 200 |
+| Greasy Fork | Published | https://greasyfork.org/zh-CN/scripts/605536 | Public script detail and install link read back in browser; raw urllib request was denied HTTP 403, not evidence of an unpublished script |
+| Chrome Web Store | Publisher verification in progress; package not yet uploaded | — | Business/trader declaration agreed by owner; organization identity/profile verification still required. No listing or review submission yet. |
+| Product page | Deployed | https://8trafficai.github.io/bili-ip-lens/ | Six canonical pages passed static checks; homepage inspected at desktop and 390px mobile with no horizontal overflow |
+| Agent Skill | Public and remotely discoverable | https://8trafficai.github.io/bili-ip-lens/agent-install/ | Skills CLI public repository list found one named skill; WorkBuddy independently read the Skill and executed the helper dry-run successfully. Browser installation is separate |
+| X | Published | https://x.com/handi_xie/status/2121706874768957664 | Own post body and image read back at resulting status URL |
+| Zhihu | Published | https://zhuanlan.zhihu.com/p/2105162590800311760 | “发布成功”, article title/body and five destination links read back; native AI-assisted creation declaration selected. Anonymous urllib fetch returned HTTP 403, so anonymous readability is not independently established. |
 | LinkedIn | Excluded | — | User instruction |
+
+## Indexing and AI retrieval execution
+
+- Google Search Console URL-prefix property ownership verified for the project URL via an HTML meta tag. Sitemap submission was accepted, but the initial table reports “无法抓取” with zero discovered pages; investigation remains open. Verification and submission are not proof of indexing.
+- IndexNow returned HTTP 202 for the first five URLs; the later six-page submission returned HTTP 200. Acknowledgement means accepted for processing, not index inclusion.
+- [AI retrieval baseline](geo-baseline-2026-11-15.md) separates natural discovery from supplied-URL content reading, and completed answers from transport/authentication failures.
+- [Engine playbook](geo-engine-playbook.md) describes official crawler/search paths and the limits of llms.txt and direct consumer chat prompting.
+- Public static Skill mirrors preserve the exact source bytes. CI checks them against the repository originals, so crawlers that cannot render GitHub can read the same instructions.
+
 
 ## Seven-day manual measurement
 
@@ -154,3 +183,7 @@ For a repeatable AI-visibility check, use the same small query set and record ev
 - Bili IP Lens 和 BiliReveal 是什么关系？
 
 Do not fabricate results, count self-authored posts as independent reviews, or claim that a sitemap, schema, or llms.txt guarantees indexing or recommendations.
+
+## Repository measurement snapshot · 2026-11-15
+
+GitHub traffic API reported 0 views / 0 unique viewers and 0 clones / 0 unique cloners at the snapshot. Release asset counters were ZIP 4, userscript 1, checksum 3. These counts include launch validation and agent dry-run activity; they do not establish external adoption or distinct users. Traffic statistics may lag.

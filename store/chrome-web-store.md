@@ -2,9 +2,9 @@
 
 Version: 0.1.1 · Prepared: 2026-11-15
 
-Status: package and listing materials prepared. Submission requires access to
-the owner's Chrome Web Store developer dashboard; this file is not a claim
-that a listing has been submitted or approved.
+Status: package and listing materials prepared; the developer dashboard is accessible.
+Business/trader publisher verification is in progress. The package has not yet been
+uploaded or submitted for review, and no public store listing exists.
 
 ## Listing
 
@@ -80,5 +80,8 @@ No payment, external account, or API key is required by the extension.
 
 ## Public status record
 
-Item ID / listing URL: pending dashboard access and submission.
-Review state: not yet submitted at preparation time.
+Item ID / listing URL: pending publisher verification and submission.
+Review state: not yet submitted.
+The owner confirmed business use and agreed to the required trader commitment;
+organization profile verification is a separate platform prerequisite. Private
+identity documents, account IDs, and contact address details are not recorded here.

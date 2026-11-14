@@ -1,13 +1,16 @@
 # Claim check — Bili IP Lens v0.1.1 public launch
 
-Reviewed: 2026-11-15  
-Baseline: `9f779ca` + current publication working tree.  
-Final published commit / destination read-back: launch operator to fill after first push, release, and Pages deployment.  
+Initial review: 2026-11-15, before first publication.
+
+Initial code baseline: `9f779ca` + the publication working tree at that time.
+
+Publication follow-up: 2026-11-15, offline review of `f025d76` + the current launch working tree.
+
 Ledger: [brand-context](../.agents/brand-context.md).
 
-**Verdict: SHIP for content; SHIP-BLOCKED for live distribution until destination links and required account sessions are verified.**
+**Current verdict: SHIP for the reviewed factual copy.** GitHub, Pages, release, Greasy Fork, X and Zhihu publication are recorded in the current launch log. Chrome Web Store publication and real userscript behavior acceptance remain incomplete; the copy must keep those limits explicit. Search ownership verification, sitemap submission and IndexNow receipts are not indexing or AI-recommendation outcomes.
 
-There is no unresolved substantive product-claim contradiction in the reviewed copy. Source/website publication can proceed. X and Zhihu publication should use the verified final product and download URLs. Chrome Web Store and Greasy Fork must retain preparation/submission wording until an actual public listing exists.
+The destination supplement at the end of this document is the current status. The eight-pass table and original remaining-check section below are the **pre-publication audit history**, retained with their original line references and five-page scope; references to a pending Greasy Fork listing or unverified launch destinations there are historical, not the present distribution state. The follow-up adds the sixth, Agent-install page and its public Skill mirrors. The initial verdict was SHIP for content / SHIP-BLOCKED for live distribution until destination and account checks were completed.
 
 ## Reviewed surfaces
 
@@ -56,3 +59,24 @@ There is no unresolved substantive product-claim contradiction in the reviewed c
 - Launch operator removed the overbroad safety-setting sentence from the install page.
 
 No site, extension, userscript, privacy, or store implementation files were changed by this reviewer.
+
+## Publication and destination follow-up · 2026-11-15
+
+This follow-up reviewed the local final text, source links and dated launch records. It did not operate a browser or independently repeat the posting, account-verification or search-engine submissions. Public publication and account observations below come from the launch operator's completed read-backs, as recorded in the linked sources. No private account, conversation, address or session material is copied into this report.
+
+| Surface / claim | Current checkable source | Follow-up finding | Severity |
+| --- | --- | --- | --- |
+| GitHub source and v0.1.1 release are public | `docs/gtm-launch.md:145-147` | Repository, release and raw userscript publication are recorded; anonymous ZIP checksum verification is distinct from a publisher signature. | NOTE |
+| Product site and Agent-install page are published | `docs/gtm-launch.md:150-151`; `site/sitemap.xml:3-8`; `site/agent-install/index.html:17-27` | Six canonical pages are present. The current local site check passed metadata, links, assets, sitemap and exact Skill-mirror consistency. | NOTE |
+| Greasy Fork script 605536 is published | `README.md:43`; `README.en.md:39`; `site/llms.txt:13,28`; `docs/gtm-launch.md:148` | Correctly states published and links the real script. A plain HTTP client's 403 does not negate the recorded browser detail/install-link read-back. | NOTE |
+| Skill is publicly available and can guide an equipped Agent | `README.md:11-23`; `site/agent-install/index.html:17-27`; `site/llms.txt:15-16,29,32` | The command installs instructions. File preparation, browser loading and behavior verification are separate. macOS/Linux helper requirements and ordinary-chat limitations are explicit; no Marketplace inclusion or fully unattended install is promised. | NOTE |
+| WorkBuddy consumed the Skill and ran its helper | `docs/geo-baseline-2026-11-15.md:239-279` | One observed public-source/dry-run sample returned `verified_dry_run` and `browser_installation: pending`; it is not a new extension installation, natural discovery or global Skill installation. | NOTE |
+| X and Zhihu were published | `docs/gtm-launch.md:152-153` | Current log records [X status 2121706874768957664](https://x.com/handi_xie/status/2121706874768957664) and [Zhihu article 2105162590800311760](https://zhuanlan.zhihu.com/p/2105162590800311760), with author-side read-back and the documented anonymous-access limitation. These are maker publications, not independent reviews. | NOTE |
+| Chrome Web Store status | `store/chrome-web-store.md:5-7,83-87`; `docs/gtm-launch.md:149`; `README.md:7,47` | Business-publisher verification and organization-profile entry remain prerequisites. The new organization/payment-profile form has not been submitted; the extension package is not uploaded or under review, and no public listing exists. Do not describe this as extension review. | CHECK |
+| Tampermonkey acceptance | `README.md:45`; `README.en.md:41` | Version 0.1.1 was saved through the normal New Userscript/manager route. Initial hot comments had no region field; this is neither proof of a failed injection nor a successful playthrough. Real region-bearing comment injection and menu OFF/ON acceptance remain pending. | CHECK |
+| Search submission and GEO results | `docs/gtm-launch.md:156-162`; `docs/geo-baseline-2026-11-15.md:12-19,34-50,74-96,98-152,239-279` | Google ownership was verified and sitemap submission accepted, while the initial sitemap table reports unable to fetch / zero discovered pages. The latest six-URL IndexNow receipt is HTTP 200, following an earlier five-URL 202; neither receipt proves indexing. Natural discovery samples and supplied-URL reading/dry-run checks remain separate, with no demonstrated ranking or recommendation gain. | CHECK |
+| 35-comment sample, scope, privacy and upstream credit | `README.md:58-78,104-106`; `docs/validation-2026-11-15.md:10-20`; `site/index.html:17-22` | No conversion/adoption/accuracy claim, fake rating, full-IP lookup, official affiliation or unsupported livestream functionality was found. The local sample and BiliReveal attribution remain explicit. The no-upload/no-telemetry runtime claim remains supported by source review. | NOTE |
+
+The recheck found no stale “Greasy Fork coming soon” or “Skill not yet available” claim in the current README, store preparation, six public HTML pages or llms.txt. The original ledger's combined marketplace row was split into published Greasy Fork and unsubmitted Chrome Web Store states. README's userscript status was narrowed from an undifferentiated pending installation to saved script / pending real behavior acceptance. No pending verification was promoted to a pass.
+
+The current publication log supersedes the initial audit's live-destination blockers. Remaining work is specific: finish the publisher/account prerequisite before package submission, complete userscript injection/menu acceptance, investigate the sitemap-fetch report, and measure search/AI discovery with fresh completed samples. LinkedIn remains excluded. This review made no browser, account, publication or scheduling changes and created no commit.
