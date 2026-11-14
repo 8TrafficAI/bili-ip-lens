@@ -4,7 +4,7 @@
 
 [下载扩展 v0.1.1](https://github.com/8TrafficAI/bili-ip-lens/releases/download/v0.1.1/bili-ip-lens-0.1.1.zip) · [Greasy Fork 油猴版](https://greasyfork.org/zh-CN/scripts/605536) · [让 AI 协助安装](https://8trafficai.github.io/bili-ip-lens/agent-install/) · [产品页](https://8trafficai.github.io/bili-ip-lens/) · [English](README.en.md) · [反馈问题](https://github.com/8TrafficAI/bili-ip-lens/issues/new/choose)
 
-免费、MIT 开源、Manifest V3。当前通过 GitHub 分发，**尚未上架 Chrome Web Store**。
+免费、MIT 开源、Manifest V3。当前通过 GitHub 分发；**v0.1.1 已提交 Chrome Web Store 审核，尚未上架**。
 
 ## 如何安装
 
@@ -46,7 +46,7 @@ Codex、WorkBuddy 等 Agent 只有在当前会话提供相应终端／浏览器�
 
 油猴安装后没有显示时，确认管理器的全局状态为 Enabled、脚本已启用，并在浏览器扩展详情中检查正常的「允许运行用户脚本 / Allow User Scripts」许可；首次安装后刷新 B站页面。本次测试中该浏览器许可原本已开启，无需更改。
 
-Chrome Web Store 仍未上架。Greasy Fork 发布与 GitHub 下载不代表 Chrome 商店审核通过。
+Chrome Web Store 的 v0.1.1 已提交审核，目前待审核、尚未上架。Greasy Fork 发布与 GitHub 下载不代表 Chrome 商店审核通过。
 
 ## 能做什么
 

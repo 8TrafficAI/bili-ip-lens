@@ -2,13 +2,14 @@
 
 Version: 0.1.1 · Prepared: 2026-11-15
 
-Status: the v0.1.1 ZIP was accepted and an extension item draft was created.
-The icon and screenshot were uploaded. Listing text was entered, but completion
-of the listing save has not been verified.
-Organization documents and SMS verification were submitted successfully; Google
-reports organization review pending. Contact-email verification is incomplete.
-The extension has NOT been submitted for extension review, and no public store
-listing exists. Package acceptance and organization review are not extension approval.
+Status: **v0.1.1 submitted for extension review; pending review.** Google confirmed
+submission and the item status shows pending review. Automatic publication after
+approval is enabled. There is no live public listing yet.
+The ZIP was accepted, icon/screenshot uploaded, and listing, privacy disclosures,
+distribution settings and reviewer instructions were saved with success confirmations.
+Contact email is verified. Organization documents and SMS verification were
+submitted; organization verification was pending at the last settings observation.
+Organization verification and extension review are separate platform states.
 
 ## Listing
 
@@ -84,15 +85,20 @@ No payment, external account, or API key is required by the extension.
 
 ## Public status record
 
-Public listing URL: none; the unpublished draft link and item identifier are omitted.
-Extension review state: NOT submitted.
-Organization review state: pending, after successful document and SMS-verification submission.
-Contact-email verification: incomplete.
-Package: v0.1.1 ZIP accepted; item draft created.
+Public listing URL: none yet; unpublished console links and the item identifier are omitted.
+Extension review state: **SUBMITTED / PENDING REVIEW**.
+Automatic publication after approval: enabled.
+Organization verification: pending at the last settings observation, after successful document and SMS-verification submission.
+Contact-email verification: **VERIFIED**.
+Package: v0.1.1 ZIP accepted.
 Listing assets: icon and screenshot uploaded.
-Listing text: entered; save completion not yet verified.
+Listing text: saved; explicit success confirmation observed.
+Privacy: permission reasons, policy URL, no collected-data categories and three applicable Limited Use declarations saved successfully.
+Distribution: free / public, all offered regions selected; save succeeded.
+Reviewer instructions: saved, with the dated save confirmation observed.
 
-These are separate platform states. Draft creation, asset upload, package
-acceptance and organization review do not establish extension-review submission
-or publication. Private identity documents, business identifiers, phone/contact
-values, account IDs and authentication URLs are not recorded here.
+The final submit action produced Google's extension-submitted confirmation and
+pending-review status. This establishes review submission, not approval or live
+publication; auto-publish remains contingent on approval and platform requirements.
+Private identity documents, business identifiers, phone/contact values, account
+IDs and authentication URLs are not recorded here.

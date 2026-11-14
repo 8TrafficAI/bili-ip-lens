@@ -4,7 +4,7 @@ A small Manifest V3 extension that displays **the IP region Bilibili already pro
 
 [Download extension v0.1.1](https://github.com/8TrafficAI/bili-ip-lens/releases/download/v0.1.1/bili-ip-lens-0.1.1.zip) · [Greasy Fork userscript](https://greasyfork.org/en/scripts/605536) · [Agent-assisted installation](https://8trafficai.github.io/bili-ip-lens/agent-install/) · [Product page](https://8trafficai.github.io/bili-ip-lens/) · [简体中文](README.md) · [Report a problem](https://github.com/8TrafficAI/bili-ip-lens/issues/new/choose)
 
-Free and MIT licensed. Distributed through GitHub; **not currently listed in the Chrome Web Store**.
+Free and MIT licensed. Distributed through GitHub; **v0.1.1 is submitted for Chrome Web Store review and is not yet available in the store**.
 
 ## Install
 
@@ -42,7 +42,7 @@ The release userscript 0.1.1 has Node VM tests and was tested separately in ego-
 
 If no labels appear after installation, check that the manager is globally Enabled, the script is enabled, and the browser extension details grant the normal **Allow User Scripts** permission. Refresh Bilibili after first installation. That permission was already enabled in the tested profile and did not need changing.
 
-The Chrome Web Store extension is not yet published. Greasy Fork publication and GitHub downloads do not imply Chrome Web Store approval.
+Version 0.1.1 is submitted and pending Chrome Web Store review, and is not yet available in the store. Greasy Fork publication and GitHub downloads do not imply Chrome Web Store approval.
 
 ## Features and scope
 
