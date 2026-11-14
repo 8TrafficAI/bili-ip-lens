@@ -72,14 +72,14 @@ This follow-up reviewed the local final text, source links and dated launch reco
 | Skill is publicly available and can guide an equipped Agent | `README.md:11-23`; `site/agent-install/index.html:17-27`; `site/llms.txt:15-16,29,32` | The command installs instructions. File preparation, browser loading and behavior verification are separate. macOS/Linux helper requirements and ordinary-chat limitations are explicit; no Marketplace inclusion or fully unattended install is promised. | NOTE |
 | WorkBuddy consumed the Skill and ran its helper | `docs/geo-baseline-2026-11-15.md:239-279` | One observed public-source/dry-run sample returned `verified_dry_run` and `browser_installation: pending`; it is not a new extension installation, natural discovery or global Skill installation. | NOTE |
 | X and Zhihu were published | `docs/gtm-launch.md:154-155` | Current log records [X status 2121706874768957664](https://x.com/handi_xie/status/2121706874768957664) and [Zhihu article 2105162590800311760](https://zhuanlan.zhihu.com/p/2105162590800311760), with author-side read-back and the documented anonymous-access limitation. These are maker publications, not independent reviews. | NOTE |
-| Chrome Web Store status | Launch operator's authenticated UI update, 2026-11-15; current publication log in `docs/gtm-launch.md`; `README.md:7,49` | Organization payment profile is saved and the user has supplied an authorized public phone. Organization-verification attempts could not match the business to a D&B record; the platform now offers its normal manual-document route. Registration/address evidence has not yet been uploaded. Listing/package preparation is complete, but the extension is not submitted for review and no public listing exists. | CHECK |
+| Chrome Web Store status | Launch operator's authenticated UI update, 2026-11-15; current status in `store/chrome-web-store.md` and publication log in `docs/gtm-launch.md` | v0.1.1 ZIP accepted and item draft created; icon/screenshot uploaded. Listing text entered, but save completion not verified. Organization documents and SMS verification submitted successfully; Google reports organization review pending. Contact-email verification incomplete. The extension has NOT been submitted for extension review and no public listing exists. | CHECK |
 | Tampermonkey acceptance | `README.md:45`; `README.en.md:41`; `docs/validation-2026-11-15.md:61-99` | Released 0.1.1 was saved through the normal New Userscript route and tested in Tampermonkey 5.5.1 / ego-browser, with MV3 disabled: 18 matching labels, OFF=0, ON=18, and state retained on menu reopen. This supersedes the earlier save-only / pending-injection state; it covers one latest-video list, not all managers or page types. | NOTE |
 | Search submission and GEO results | `docs/search-indexing-2026-11-15.md`; `docs/geo-baseline-2026-11-15.md:12-19,34-50,74-96,98-152,239-279` | Homepage indexed state is confirmed; its last crawl was 05:19:14 Asia/Shanghai on 2026-11-15. Sitemap live inspection fetched successfully at 05:23:38; one normal resubmission was accepted, but the sitemap report still says unable to fetch / zero discovered pages. The six-URL IndexNow HTTP 200 receipt is not indexing proof. Natural discovery, supplied-URL reading and dry-run execution remain separate, with no demonstrated ranking or recommendation gain. | CHECK |
 | 35-comment sample, scope, privacy and upstream credit | `README.md:60-80,106-108`; `docs/validation-2026-11-15.md:10-20`; `site/index.html:17-22` | No conversion/adoption/accuracy claim, fake rating, full-IP lookup, official affiliation or unsupported livestream functionality was found. The local sample and BiliReveal attribution remain explicit. The no-upload/no-telemetry runtime claim remains supported by source review. | NOTE |
 
 The recheck found no stale “Greasy Fork coming soon” or “Skill not yet available” claim in the current README, store preparation, six public HTML pages or llms.txt. The original ledger's combined marketplace row was split into published Greasy Fork and unsubmitted Chrome Web Store states. README's earlier save-only userscript state has now been superseded by the operator's bounded real-manager validation; only the observed Tampermonkey/video scenario is marked as passed.
 
-The current publication log supersedes the initial audit's live-destination blockers. Remaining work is specific: resolve organization identity matching or complete the platform's manual-document verification before package submission, check other userscript managers/page scenarios separately, recheck sitemap parsing and other-page indexing, and measure search/AI discovery with fresh completed samples. LinkedIn remains excluded. This reviewer made no browser, account, publication or scheduling changes and created no commit.
+The current publication log supersedes the initial audit's live-destination blockers. Remaining work is specific: complete contact-email verification, verify the listing save, await the organization-review result and satisfy platform prerequisites before submitting the extension for its separate review; check other userscript managers/page scenarios separately, recheck sitemap parsing and other-page indexing, and measure search/AI discovery with fresh completed samples. LinkedIn remains excluded. This reviewer made no browser, account, publication or scheduling changes and created no commit.
 
 
 ## Real-manager evidence update · 2026-11-15
@@ -118,9 +118,12 @@ indexing request was accepted into the priority crawl queue, which is not an
 indexed result. Greasy Fork's description and the existing Zhihu article were
 updated and their published text read back, including the 18-comment sample and
 Tampermonkey 5.5.1. The old pending-validation paragraph was removed from the
-updated article. Chrome's organization payment profile is saved and the user has
-supplied an authorized public phone. The later organization-verification attempts
-failed automatic D&B matching and reached the official manual-document route;
-document upload and extension review submission remain pending. No identity,
-contact values, business identifiers, private console URLs or document contents
-are included here.
+updated article. Chrome accepted the v0.1.1 ZIP and created an item draft; the
+icon and screenshot were uploaded. Listing text was entered, but completion of
+its save was not verified. Organization documents and SMS verification were
+submitted successfully, and Google reports organization review pending.
+Contact-email verification remains incomplete. The extension has NOT been
+submitted for extension review and no public listing exists. These state
+distinctions supersede the earlier manual-upload-pending observation. No identity,
+contact values, business identifiers, unpublished draft links, authentication URLs
+or document contents are included here.

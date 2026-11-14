@@ -2,11 +2,13 @@
 
 Version: 0.1.1 · Prepared: 2026-11-15
 
-Status: package and listing materials prepared; the developer dashboard is accessible.
-The organization payment profile is saved and an authorized public phone has been
-provided. Automatic D&B organization matching failed; the platform's normal
-manual-document verification route is available, with document upload pending.
-The extension has not been submitted for review and no public store listing exists.
+Status: the v0.1.1 ZIP was accepted and an extension item draft was created.
+The icon and screenshot were uploaded. Listing text was entered, but completion
+of the listing save has not been verified.
+Organization documents and SMS verification were submitted successfully; Google
+reports organization review pending. Contact-email verification is incomplete.
+The extension has NOT been submitted for extension review, and no public store
+listing exists. Package acceptance and organization review are not extension approval.
 
 ## Listing
 
@@ -82,11 +84,15 @@ No payment, external account, or API key is required by the extension.
 
 ## Public status record
 
-Item ID / listing URL: pending publisher verification and submission.
-Review state: not yet submitted.
-The owner confirmed business use and agreed to the required trader commitment.
-Organization profile entry and the public-phone prerequisite are no longer the
-current blockers: automatic organization matching failed and manual verification
-is pending. The official fallback requests business registration and address
-evidence; no documents have yet been uploaded. Private identity documents,
-business identifiers, phone/contact values and account IDs are not recorded here.
+Public listing URL: none; the unpublished draft link and item identifier are omitted.
+Extension review state: NOT submitted.
+Organization review state: pending, after successful document and SMS-verification submission.
+Contact-email verification: incomplete.
+Package: v0.1.1 ZIP accepted; item draft created.
+Listing assets: icon and screenshot uploaded.
+Listing text: entered; save completion not yet verified.
+
+These are separate platform states. Draft creation, asset upload, package
+acceptance and organization review do not establish extension-review submission
+or publication. Private identity documents, business identifiers, phone/contact
+values, account IDs and authentication URLs are not recorded here.
