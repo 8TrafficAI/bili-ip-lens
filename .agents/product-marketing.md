@@ -1,6 +1,6 @@
 # Bili IP Lens — product marketing context
 
-Version: 1.0.0
+Version: 1.1.0
 Updated: 2026-11-15
 Basis: extension source, manifest, validation record, and user acceptance of the v0.1.1 popup fix.
 
@@ -28,9 +28,9 @@ One validation session reached 35 region-bearing comment renderers, all with lab
 
 Dynamic and profile pages share the integration target but still need separate manual acceptance. Historical Vue comment UIs, live-chat regions, missing region data, full IP addresses, and precise geolocation are outside the scope.
 
-Targets Chrome / Chromium 111+; only ego-browser acceptance is recorded so far. Distribution is GitHub ZIP / unpacked installation. There is no Chrome Web Store listing.
+Targets Chrome / Chromium 111+; only ego-browser acceptance is recorded so far. Distribution includes GitHub ZIP / unpacked installation and the published Greasy Fork userscript. Chrome Web Store v0.1.1 is submitted and pending review, with automatic publication after approval enabled; no live store listing exists.
 
-The launch also includes a separate Tampermonkey userscript and planned Greasy Fork / Chrome Web Store submissions. Use actual publication URLs and review status when available. Do not ascribe the MV3 toolbar popup to the userscript or treat submission as approval.
+The separate Tampermonkey userscript is published at https://greasyfork.org/zh-CN/scripts/605536. Use the current review state in store/chrome-web-store.md and actual publication URLs when available. Do not ascribe the MV3 toolbar popup to the userscript or treat submission as approval.
 
 ## Positioning
 
@@ -72,8 +72,10 @@ Machine-readable files and structured data can make facts easier to parse. They 
 
 ## Measurement
 
-No adoption, referral, indexing, or AI-citation results have been established in this context. Record actual publication URLs and timestamps when publishing. Establish download, repository-traffic, search, and citation baselines after publication; leave unavailable values as unmeasured.
+Current publication, Google indexing and bounded consumer-AI probe evidence is recorded in docs/gtm-launch.md, docs/search-indexing-2026-11-15.md, docs/geo-baseline-2026-11-15.md and dated GTM follow-ups. Homepage index inclusion is verified; natural product recommendations and external adoption are not established. Download counters include validation activity. A daily tracking task was enabled on 2026-11-15; it does not automatically repost content. Leave unavailable values unmeasured and keep named-URL reading separate from natural discovery.
 
 ## Change log
 
 - 2026-11-15 — v1.0.0: initial source-backed public-launch context, with confirmed scope and channel exclusions.
+
+- 2026-11-15 — v1.1.0: synchronize published userscript, submitted Chrome review, and dated measurement records; daily tracking enabled.

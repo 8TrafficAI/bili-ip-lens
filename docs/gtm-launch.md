@@ -166,9 +166,9 @@ Published update read-back on 2026-11-15 confirmed the Tampermonkey 5.5.1 / 18-c
 - Public static Skill mirrors preserve the exact source bytes. CI checks them against the repository originals, so crawlers that cannot render GitHub can read the same instructions.
 
 
-## Seven-day manual measurement
+## Seven-day measurement and daily follow-up
 
-No automation or scheduled posting is created by this plan.
+The initial plan was manual. On 2026-11-15, the owner requested and enabled a daily GTM/GEO tracking task at 09:00 Asia/Shanghai. It checks publication, available metrics and consumer-AI results without automatically reposting. The first fresh follow-up is recorded in [the dated GTM report](gtm-followup-2026-11-15.md).
 
 | When | Action | Record |
 | --- | --- | --- |

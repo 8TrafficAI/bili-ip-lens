@@ -11,7 +11,7 @@
 - No full IP addresses, precise location, missing-data inference, or real-time live chat region support.
 - Extension stores one enabled boolean locally. No IP lookup, telemetry or comment upload.
 - The Tampermonkey userscript is published on Greasy Fork (script 605536). Its switch is in the userscript manager's menu, not a separate Chrome popup.
-- The extension is not yet published on Chrome Web Store; do not invent an approved listing link.
+- Version 0.1.1 is submitted to the Chrome Web Store and pending review, not yet published; do not invent an approved listing link.
 - Agent skill: npx skills add 8TrafficAI/bili-ip-lens --skill bili-ip-lens. Its macOS/Linux helper verifies a public release ZIP/checksum and prepares files; browser loading and verification remain separate steps.
 - A normal chat can read these instructions without having local execution tools. No marketplace discovery or fully unattended browser installation is promised.
 
