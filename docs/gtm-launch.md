@@ -168,9 +168,11 @@ Published update read-back on 2026-11-15 confirmed the Tampermonkey 5.5.1 / 18-c
 - Public static Skill mirrors preserve the exact source bytes. CI checks them against the repository originals, so crawlers that cannot render GitHub can read the same instructions.
 
 
-## Seven-day measurement and daily follow-up
+## Measurement and scheduled follow-up
 
 The initial plan was manual. On 2026-11-15, the owner requested and enabled a daily GTM/GEO tracking task at 09:00 Asia/Shanghai. It checks publication, available metrics and consumer-AI results without automatically reposting. The first fresh follow-up is recorded in [the dated GTM report](gtm-followup-2026-11-15.md). The first scheduled run is recorded in [the 09:00 daily check](gtm-daily-2026-11-15.md). The [November 17 check](gtm-daily-2026-11-17.md) records the live Chrome Web Store listing, updated distribution counters and fresh consumer-AI observations.
+
+On 2026-11-17, the owner changed the existing task to **weekly, Tuesday at 09:00 Asia/Shanghai**, with targeted social keyword searches and contextual public replies as its primary acquisition work. Replies disclose the maintainer relationship and are logged with publication evidence; LinkedIn remains excluded. Distribution checks continue, while consumer-AI checks become optional rotating samples. The earlier daily reports remain historical records.
 
 | When | Action | Record |
 | --- | --- | --- |

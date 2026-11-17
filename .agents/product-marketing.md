@@ -1,6 +1,6 @@
 # Bili IP Lens — product marketing context
 
-Version: 1.2.0
+Version: 1.3.0
 Updated: 2026-11-17
 Basis: extension source, manifest, validation record, user acceptance of the v0.1.1 popup fix, and the launch operator's normal-UI read-back of the public Chrome Web Store listing on 2026-11-17.
 
@@ -73,7 +73,7 @@ Machine-readable files and structured data can make facts easier to parse. They 
 
 ## Measurement
 
-Current publication, Google indexing and bounded consumer-AI probe evidence is recorded in docs/gtm-launch.md, docs/search-indexing-2026-11-15.md, docs/geo-baseline-2026-11-15.md and dated GTM follow-ups. Homepage index inclusion was verified on November 15. The November 17 natural-query check observed one ChatGPT recommendation (1/1, same account with earlier branded-query history); independent organic discovery, stable recommendation improvement and external adoption are not established. See docs/gtm-daily-2026-11-17.md. The public store displayed 1 user on 2026-11-17; this platform counter is not independent-adoption proof, and no ratings or reviews were observed. Download counters include validation activity. A daily tracking task was enabled on 2026-11-15; it does not automatically repost content. Leave unavailable values unmeasured and keep named-URL reading separate from natural discovery.
+Current publication, Google indexing and bounded consumer-AI probe evidence is recorded in docs/gtm-launch.md, docs/search-indexing-2026-11-15.md, docs/geo-baseline-2026-11-15.md and dated GTM follow-ups. Homepage index inclusion was verified on November 15. The November 17 natural-query check observed one ChatGPT recommendation (1/1, same account with earlier branded-query history); independent organic discovery, stable recommendation improvement and external adoption are not established. See docs/gtm-daily-2026-11-17.md. The public store displayed 1 user on 2026-11-17; this platform counter is not independent-adoption proof, and no ratings or reviews were observed. Download counters include validation activity. A daily tracking task was enabled on 2026-11-15 and changed by the owner on 2026-11-17 to weekly Tuesdays at 09:00 Asia/Shanghai. Its main work is now targeted social keyword search and relevant public replies with maintainer disclosure and publication receipts; distribution checks remain secondary and consumer-AI probes are optional rotating samples. Public replies are authorized; repeated posts, bulk direct messages and LinkedIn remain excluded. Leave unavailable values unmeasured and keep named-URL reading separate from natural discovery.
 
 ## Change log
 
@@ -82,3 +82,5 @@ Current publication, Google indexing and bounded consumer-AI probe evidence is r
 - 2026-11-15 — v1.1.0: synchronize published userscript, submitted Chrome review, and dated measurement records; daily tracking enabled.
 
 - 2026-11-17 — v1.2.0: record verified live Chrome Web Store v0.1.1 listing and make normal store installation the primary conversion; retain ZIP/userscript alternatives and unavailable organization-verification state.
+
+- 2026-11-17 — v1.3.0: change the existing automation to weekly targeted social acquisition, with relevant disclosed replies and recorded outcomes; reduce mandatory GEO probing.
