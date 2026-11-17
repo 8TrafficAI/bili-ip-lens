@@ -1,8 +1,8 @@
 # Bili IP Lens — product marketing context
 
-Version: 1.1.0
-Updated: 2026-11-15
-Basis: extension source, manifest, validation record, and user acceptance of the v0.1.1 popup fix.
+Version: 1.2.0
+Updated: 2026-11-17
+Basis: extension source, manifest, validation record, user acceptance of the v0.1.1 popup fix, and the launch operator's normal-UI read-back of the public Chrome Web Store listing on 2026-11-17.
 
 ## Product
 
@@ -10,6 +10,7 @@ Bili IP Lens is a free, MIT-licensed Chrome / Chromium Manifest V3 extension mai
 
 Repository: https://github.com/8TrafficAI/bili-ip-lens
 Product page: https://8trafficai.github.io/bili-ip-lens/
+Chrome Web Store: https://chromewebstore.google.com/detail/eigfjbfkjlihfkiheeodkckmebolbcgi
 Release version: 0.1.1
 
 ## Audience and job
@@ -28,9 +29,9 @@ One validation session reached 35 region-bearing comment renderers, all with lab
 
 Dynamic and profile pages share the integration target but still need separate manual acceptance. Historical Vue comment UIs, live-chat regions, missing region data, full IP addresses, and precise geolocation are outside the scope.
 
-Targets Chrome / Chromium 111+; only ego-browser acceptance is recorded so far. Distribution includes GitHub ZIP / unpacked installation and the published Greasy Fork userscript. Chrome Web Store v0.1.1 is submitted and pending review, with automatic publication after approval enabled; no live store listing exists.
+Targets Chrome / Chromium 111+; only ego-browser acceptance is recorded so far. Chrome Web Store v0.1.1 is publicly live as of 2026-11-17, with an enabled install button and matching project website/support repository. The normal store installation flow is the primary distribution route. GitHub ZIP / unpacked installation remains an advanced fallback, and the published Greasy Fork userscript is an alternative distribution. Store availability does not expand the tested browser/page scope.
 
-The separate Tampermonkey userscript is published at https://greasyfork.org/zh-CN/scripts/605536. Use the current review state in store/chrome-web-store.md and actual publication URLs when available. Do not ascribe the MV3 toolbar popup to the userscript or treat submission as approval.
+The separate Tampermonkey userscript is published at https://greasyfork.org/zh-CN/scripts/605536. Use the current dated distribution state in store/chrome-web-store.md and the actual public listing URL. Do not ascribe the MV3 toolbar popup to the userscript. Developer-console access currently requires reauthentication; organization verification was last observed pending on 2026-11-15 and its current state is unavailable. Public store availability is not evidence for claiming organization verification is complete.
 
 ## Positioning
 
@@ -50,9 +51,9 @@ It is not an official Bilibili product.
 
 ## Offer and conversion
 
-Free installation, no account or subscription. Primary conversion: download the release ZIP, extract it, load the folder containing manifest.json, and enable the extension.
+Free installation, with no account or subscription required by the extension. Primary conversion: open the verified Chrome Web Store listing and complete its normal browser installation flow, then refresh an existing Bilibili page and verify the popup toggle.
 
-The install guide must distinguish the flat release ZIP from a source checkout's extension/ directory. Install friction should be measured from real reports, not assumed away.
+The advanced ZIP fallback must distinguish the flat release ZIP from a source checkout's extension/ directory. Userscript instructions must identify the manager-menu control separately. Install friction should be measured from real reports, not assumed away.
 
 ## Launch and channels
 
@@ -72,10 +73,12 @@ Machine-readable files and structured data can make facts easier to parse. They 
 
 ## Measurement
 
-Current publication, Google indexing and bounded consumer-AI probe evidence is recorded in docs/gtm-launch.md, docs/search-indexing-2026-11-15.md, docs/geo-baseline-2026-11-15.md and dated GTM follow-ups. Homepage index inclusion is verified; natural product recommendations and external adoption are not established. Download counters include validation activity. A daily tracking task was enabled on 2026-11-15; it does not automatically repost content. Leave unavailable values unmeasured and keep named-URL reading separate from natural discovery.
+Current publication, Google indexing and bounded consumer-AI probe evidence is recorded in docs/gtm-launch.md, docs/search-indexing-2026-11-15.md, docs/geo-baseline-2026-11-15.md and dated GTM follow-ups. Homepage index inclusion was verified on November 15. The November 17 natural-query check observed one ChatGPT recommendation (1/1, same account with earlier branded-query history); independent organic discovery, stable recommendation improvement and external adoption are not established. See docs/gtm-daily-2026-11-17.md. The public store displayed 1 user on 2026-11-17; this platform counter is not independent-adoption proof, and no ratings or reviews were observed. Download counters include validation activity. A daily tracking task was enabled on 2026-11-15; it does not automatically repost content. Leave unavailable values unmeasured and keep named-URL reading separate from natural discovery.
 
 ## Change log
 
 - 2026-11-15 — v1.0.0: initial source-backed public-launch context, with confirmed scope and channel exclusions.
 
 - 2026-11-15 — v1.1.0: synchronize published userscript, submitted Chrome review, and dated measurement records; daily tracking enabled.
+
+- 2026-11-17 — v1.2.0: record verified live Chrome Web Store v0.1.1 listing and make normal store installation the primary conversion; retain ZIP/userscript alternatives and unavailable organization-verification state.

@@ -1,6 +1,6 @@
 # Bili IP Lens launch brief
 
-Updated: 2026-11-15 · Release: v0.1.1
+Updated: 2026-11-17 · Release: v0.1.1
 
 This document records the launch position, prepared copy, and a manual seven-day measurement plan. Prepared copy is not proof of publication; actual publication URLs and outcomes must be entered after execution.
 
@@ -16,7 +16,7 @@ The modern integration is adapted from [MaxChang3/BiliReveal](https://github.com
 
 ## Conversion path
 
-Search or social post → [product page](https://8trafficai.github.io/bili-ip-lens/) → [v0.1.1 download](https://github.com/8TrafficAI/bili-ip-lens/releases/download/v0.1.1/bili-ip-lens-0.1.1.zip) → extract → load unpacked folder → refresh Bilibili → test the switch.
+Search or social post → [product page](https://8trafficai.github.io/bili-ip-lens/) → [Chrome Web Store](https://chromewebstore.google.com/detail/eigfjbfkjlihfkiheeodkckmebolbcgi) → normal browser installation → refresh Bilibili → test the switch. The [v0.1.1 ZIP](https://github.com/8TrafficAI/bili-ip-lens/releases/download/v0.1.1/bili-ip-lens-0.1.1.zip) remains a manual-install alternative.
 
 The release ZIP contains manifest.json at its root. A source checkout uses extension/. This distinction belongs in every detailed installation guide.
 
@@ -80,6 +80,8 @@ Use the publisher's real maker identity; do not describe the product as an indep
 B站网页版怎么显示评论 IP 属地？一个可开关的开源小工具
 
 ### Body
+
+The copy below records the article as published on 2026-11-15. Its store-pending wording is historical: the Chrome Web Store listing was verified live on 2026-11-17. The daily tracker did not automatically edit or repost the social article.
 
 我们在 8Traffic 做了一个小工具，叫 Bili IP Lens。用途很具体：在 B站网页版评论时间旁，显示平台已经提供的 IP 属地，再给它加一个随时可以关闭的开关。下面是开发者自己的功能与安装说明。
 
@@ -148,7 +150,7 @@ Published update read-back on 2026-11-15 confirmed the Tampermonkey 5.5.1 / 18-c
 | GitHub release v0.1.1 | Published | https://github.com/8TrafficAI/bili-ip-lens/releases/tag/v0.1.1 | Anonymous ZIP SHA-256 matched local artifact |
 | Repository userscript | Public | https://raw.githubusercontent.com/8TrafficAI/bili-ip-lens/main/userscript/bili-ip-lens.user.js | Anonymous source HTTP 200 |
 | Greasy Fork | Published | https://greasyfork.org/zh-CN/scripts/605536 | Public script detail and install link read back in browser; raw urllib request was denied HTTP 403, not evidence of an unpublished script |
-| Chrome Web Store | v0.1.1 SUBMITTED / PENDING EXTENSION REVIEW | — | Google confirmed final extension-review submission and shows pending review; auto-publish after approval enabled. Listing, privacy, distribution and reviewer instructions saved successfully; icon/screenshot uploaded; contact email verified. Organization verification was separately pending at the last settings observation. No live public listing yet. |
+| Chrome Web Store | **v0.1.1 PUBLIC / LIVE** | https://chromewebstore.google.com/detail/eigfjbfkjlihfkiheeodkckmebolbcgi | Verified 2026-11-17: public product identity, version and enabled install button; anonymous HTTP 200. Internal console now requires reauthentication, so current organization-verification state is unavailable; last observed pending on November 15. No resubmission or repeat installation. |
 | Product page | Deployed | https://8trafficai.github.io/bili-ip-lens/ | Six canonical pages passed static checks; homepage inspected at desktop and 390px mobile with no horizontal overflow |
 | Agent Skill | Public and remotely discoverable | https://8trafficai.github.io/bili-ip-lens/agent-install/ | Skills CLI public repository list found one named skill; WorkBuddy independently read the Skill and executed the helper dry-run successfully. Browser installation is separate |
 | X | Published | https://x.com/handi_xie/status/2121706874768957664 | Own post body and image read back at resulting status URL |
@@ -168,7 +170,7 @@ Published update read-back on 2026-11-15 confirmed the Tampermonkey 5.5.1 / 18-c
 
 ## Seven-day measurement and daily follow-up
 
-The initial plan was manual. On 2026-11-15, the owner requested and enabled a daily GTM/GEO tracking task at 09:00 Asia/Shanghai. It checks publication, available metrics and consumer-AI results without automatically reposting. The first fresh follow-up is recorded in [the dated GTM report](gtm-followup-2026-11-15.md). The first scheduled run is recorded in [the 09:00 daily check](gtm-daily-2026-11-15.md).
+The initial plan was manual. On 2026-11-15, the owner requested and enabled a daily GTM/GEO tracking task at 09:00 Asia/Shanghai. It checks publication, available metrics and consumer-AI results without automatically reposting. The first fresh follow-up is recorded in [the dated GTM report](gtm-followup-2026-11-15.md). The first scheduled run is recorded in [the 09:00 daily check](gtm-daily-2026-11-15.md). The [November 17 check](gtm-daily-2026-11-17.md) records the live Chrome Web Store listing, updated distribution counters and fresh consumer-AI observations.
 
 | When | Action | Record |
 | --- | --- | --- |

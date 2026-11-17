@@ -2,11 +2,19 @@
 
 A small Manifest V3 extension that displays **the IP region Bilibili already provides** next to a comment's timestamp. A toolbar switch shows or hides the added labels immediately.
 
-[Download extension v0.1.1](https://github.com/8TrafficAI/bili-ip-lens/releases/download/v0.1.1/bili-ip-lens-0.1.1.zip) · [Greasy Fork userscript](https://greasyfork.org/en/scripts/605536) · [Agent-assisted installation](https://8trafficai.github.io/bili-ip-lens/agent-install/) · [Product page](https://8trafficai.github.io/bili-ip-lens/) · [简体中文](README.md) · [Report a problem](https://github.com/8TrafficAI/bili-ip-lens/issues/new/choose)
+[Install from Chrome Web Store](https://chromewebstore.google.com/detail/eigfjbfkjlihfkiheeodkckmebolbcgi) · [Advanced ZIP fallback](https://github.com/8TrafficAI/bili-ip-lens/releases/download/v0.1.1/bili-ip-lens-0.1.1.zip) · [Greasy Fork userscript](https://greasyfork.org/en/scripts/605536) · [Agent-assisted installation](https://8trafficai.github.io/bili-ip-lens/agent-install/) · [Product page](https://8trafficai.github.io/bili-ip-lens/) · [简体中文](README.md) · [Report a problem](https://github.com/8TrafficAI/bili-ip-lens/issues/new/choose)
 
-Free and MIT licensed. Distributed through GitHub; **v0.1.1 is submitted for Chrome Web Store review and is not yet available in the store**.
+Free and MIT licensed. **Version 0.1.1 was confirmed publicly available in the [Chrome Web Store](https://chromewebstore.google.com/detail/eigfjbfkjlihfkiheeodkckmebolbcgi) on November 17, 2026.** Use the normal store installation; the GitHub ZIP remains an advanced fallback.
 
 ## Install
+
+### Chrome Web Store (recommended)
+
+1. Open the [Bili IP Lens listing](https://chromewebstore.google.com/detail/eigfjbfkjlihfkiheeodkckmebolbcgi) and check the product name and project website.
+2. Choose the store installation button and complete the browser’s normal confirmation.
+3. Pin the toolbar icon, refresh an open Bilibili video page, and verify the popup toggle.
+
+The store route does not require a ZIP or Developer mode.
 
 ### Use an AI agent with local tools
 
@@ -18,11 +26,11 @@ npx skills add 8TrafficAI/bili-ip-lens --skill bili-ip-lens
 
 Then ask: **“Install Bili IP Lens and verify the comment IP-region toggle.”**
 
-The skill guides the agent through release ZIP / SHA-256 verification, preparation of a dedicated directory, normal browser loading, and behavior checks. The file-preparation helper supports macOS/Linux with `curl` and Python 3.8+; the current Skills CLI requires Node.js 22.20+. Required browser confirmations still apply. Installing instructions or preparing files does not enable the browser extension by itself.
+The skill first guides the agent to verify the published project listing, install through the normal store interface, and check behavior. Release ZIP / SHA-256 verification, directory preparation and unpacked loading apply only to the advanced ZIP fallback. That helper supports macOS/Linux with `curl` and Python 3.8+; the current Skills CLI requires Node.js 22.20+. Required browser confirmations still apply. Installing instructions or preparing files does not enable the browser extension by itself.
 
 Codex, WorkBuddy, or another agent needs the relevant terminal/browser tools in its current session to execute these steps. An ordinary ChatGPT or Gemini chat can read the guide but does not thereby gain access to your computer. See the [agent installation guide](https://8trafficai.github.io/bili-ip-lens/agent-install/).
 
-### Release ZIP
+### Release ZIP (advanced fallback)
 
 1. Download [bili-ip-lens-0.1.1.zip](https://github.com/8TrafficAI/bili-ip-lens/releases/download/v0.1.1/bili-ip-lens-0.1.1.zip) and fully extract it to a permanent folder.
 2. Open `chrome://extensions` and enable Developer mode.
@@ -42,7 +50,7 @@ The release userscript 0.1.1 has Node VM tests and was tested separately in ego-
 
 If no labels appear after installation, check that the manager is globally Enabled, the script is enabled, and the browser extension details grant the normal **Allow User Scripts** permission. Refresh Bilibili after first installation. That permission was already enabled in the tested profile and did not need changing.
 
-Version 0.1.1 is submitted and pending Chrome Web Store review, and is not yet available in the store. Greasy Fork publication and GitHub downloads do not imply Chrome Web Store approval.
+Version 0.1.1 is publicly available in the Chrome Web Store, and the separate userscript is published on Greasy Fork. Choose one distribution to install.
 
 ## Features and scope
 

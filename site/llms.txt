@@ -3,7 +3,7 @@
 > Free, open-source Chrome / Chromium extension that displays IP region strings already present in modern Bilibili comments. Published by 8Traffic. This is a reading index, not a guarantee of search indexing or AI recommendations.
 
 ## Product facts
-- Current version: 0.1.1. Last updated: 2026-11-15.
+- Current version: 0.1.1. Last updated: 2026-11-17.
 - Price: free. License: MIT, retaining BiliReveal attribution.
 - Data source: existing comment component reply_control.location field.
 - Main and nested modern video comments tested locally in ego-browser.
@@ -11,11 +11,12 @@
 - No full IP addresses, precise location, missing-data inference, or real-time live chat region support.
 - Extension stores one enabled boolean locally. No IP lookup, telemetry or comment upload.
 - The Tampermonkey userscript is published on Greasy Fork (script 605536). Its switch is in the userscript manager's menu, not a separate Chrome popup.
-- Version 0.1.1 is submitted to the Chrome Web Store and pending review, not yet published; do not invent an approved listing link.
-- Agent skill: npx skills add 8TrafficAI/bili-ip-lens --skill bili-ip-lens. Its macOS/Linux helper verifies a public release ZIP/checksum and prepares files; browser loading and verification remain separate steps.
+- Version 0.1.1 is publicly available in the Chrome Web Store, verified 2026-11-17: https://chromewebstore.google.com/detail/eigfjbfkjlihfkiheeodkckmebolbcgi. Prefer normal store installation; GitHub ZIP/unpacked installation is an advanced fallback.
+- Agent skill: npx skills add 8TrafficAI/bili-ip-lens --skill bili-ip-lens. It prefers the verified Chrome Web Store installation and behavior checks. Its macOS/Linux ZIP helper is only a fallback; file preparation is separate from browser installation and verification.
 - A normal chat can read these instructions without having local execution tools. No marketplace discovery or fully unattended browser installation is promised.
 
 ## Pages
+- [Chrome Web Store — primary installation](https://chromewebstore.google.com/detail/eigfjbfkjlihfkiheeodkckmebolbcgi)
 - [Chinese product overview](https://8trafficai.github.io/bili-ip-lens/)
 - [Install guide](https://8trafficai.github.io/bili-ip-lens/install/)
 - [Agent-assisted installation guide](https://8trafficai.github.io/bili-ip-lens/agent-install/)

@@ -1,15 +1,19 @@
 # Chrome Web Store submission material
 
-Version: 0.1.1 · Prepared: 2026-11-15
+Version: 0.1.1 · Prepared: 2026-11-15 · Status checked: 2026-11-17
 
-Status: **v0.1.1 submitted for extension review; pending review.** Google confirmed
-submission and the item status shows pending review. Automatic publication after
-approval is enabled. There is no live public listing yet.
-The ZIP was accepted, icon/screenshot uploaded, and listing, privacy disclosures,
-distribution settings and reviewer instructions were saved with success confirmations.
-Contact email is verified. Organization documents and SMS verification were
-submitted; organization verification was pending at the last settings observation.
-Organization verification and extension review are separate platform states.
+Status: **v0.1.1 is publicly available on Chrome Web Store.**
+On 2026-11-17, the official public listing displayed the project name, version
+0.1.1, project website and an enabled normal installation button. Anonymous
+HTTP access also returned the project listing. No package was resubmitted or
+installed during this check.
+
+Public listing: https://chromewebstore.google.com/detail/eigfjbfkjlihfkiheeodkckmebolbcgi
+
+The developer console requires Google reauthentication, so its current internal
+review and organization-verification states were unavailable in this check.
+Organization verification was pending at the last successful settings observation
+on 2026-11-15; the public listing does not establish its current internal state.
 
 ## Listing
 
@@ -85,20 +89,21 @@ No payment, external account, or API key is required by the extension.
 
 ## Public status record
 
-Public listing URL: none yet; unpublished console links and the item identifier are omitted.
-Extension review state: **SUBMITTED / PENDING REVIEW**.
-Automatic publication after approval: enabled.
-Organization verification: pending at the last settings observation, after successful document and SMS-verification submission.
-Contact-email verification: **VERIFIED**.
-Package: v0.1.1 ZIP accepted.
-Listing assets: icon and screenshot uploaded.
-Listing text: saved; explicit success confirmation observed.
-Privacy: permission reasons, policy URL, no collected-data categories and three applicable Limited Use declarations saved successfully.
-Distribution: free / public, all offered regions selected; save succeeded.
-Reviewer instructions: saved, with the dated save confirmation observed.
+Public listing URL: https://chromewebstore.google.com/detail/eigfjbfkjlihfkiheeodkckmebolbcgi
+Public availability: **LIVE**, verified 2026-11-17 by the normal public store UI
+and anonymous HTTP access. Version 0.1.1; installation button enabled.
+Visible public counters: 1 user, no ratings. These do not establish independent
+external adoption, active users or a new installation in this tracking run.
 
-The final submit action produced Google's extension-submitted confirmation and
-pending-review status. This establishes review submission, not approval or live
-publication; auto-publish remains contingent on approval and platform requirements.
+Internal extension review and organization verification: **unavailable today**,
+because the developer console requires reauthentication. Last successfully
+observed on 2026-11-15: extension submitted/pending review, auto-publish enabled,
+organization verification pending. Those are historical states, not today's
+current public availability.
+
+The original submission accepted the v0.1.1 ZIP, uploaded icon and screenshot,
+saved listing text, privacy disclosures, distribution and reviewer instructions,
+and verified the contact email. The final submission confirmation was recorded
+on 2026-11-15. No new package submission was performed on 2026-11-17.
 Private identity documents, business identifiers, phone/contact values, account
 IDs and authentication URLs are not recorded here.

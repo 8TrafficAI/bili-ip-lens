@@ -1,6 +1,6 @@
 ---
 name: bili-ip-lens
-description: Install or update Bili IP Lens from its verified public release, load it through the browser's normal extension interface, and verify Bilibili comment IP-region labels and the saved toggle. Use for Bili IP Lens installation requests, not general IP lookup or live-chat location.
+description: Install or update Bili IP Lens through its published Chrome Web Store listing, or prepare a verified release ZIP as a fallback, then verify Bilibili comment IP-region labels and the saved toggle. Use for Bili IP Lens installation requests, not general IP lookup or live-chat location.
 ---
 
 # Bili IP Lens
@@ -11,6 +11,7 @@ Help the user install the chosen Bili IP Lens distribution and verify it. A usef
 
 - Repository: <https://github.com/8TrafficAI/bili-ip-lens>.
 - Install guide: <https://8trafficai.github.io/bili-ip-lens/install/>.
+- Chrome Web Store: <https://chromewebstore.google.com/detail/eigfjbfkjlihfkiheeodkckmebolbcgi>. Version 0.1.1 was verified publicly listed on 2026-11-17; use this normal installation route first.
 - It displays a region string Bilibili already supplies with a modern comment. It does not discover full IP addresses, infer missing regions, or show real-time live-chat regions.
 - The MV3 extension has a toolbar popup and a locally saved ON/OFF switch. Its runtime only declares `storage`; content scripts match `www.bilibili.com`, `t.bilibili.com`, and `space.bilibili.com`.
 - The separate Tampermonkey version toggles through the script manager's menu, not its own Chrome popup. Preserve an explicit userscript choice; use [the userscript guide](https://github.com/8TrafficAI/bili-ip-lens/tree/main/userscript) instead of the extension helper.
@@ -28,13 +29,17 @@ This installs agent instructions, not a browser extension. The CLI selects the t
 
 ## Choose the installation route
 
-Read the current project installation page or README. If it links a **published project Chrome Web Store listing**, verify the listing's publisher/support repository and prefer its normal browser installation flow. Do not treat a pending submission, an unrelated search result, or a store URL without a published listing as approval. At this skill's creation, no approved store listing was available; the public GitHub release is the available extension route.
+Read the current project installation page or README, then open the published Chrome Web Store link above. Verify the name **Bili IP Lens · B站评论 IP 属地**, version and project website/support repository before using its normal installation flow. Preserve an explicit userscript choice. Use the GitHub ZIP fallback only when the user chooses it or the store route is unavailable; do not substitute an unrelated listing.
 
 Installing this skill or preparing its files is not permission to bypass browser controls. Continue within the user's requested installation scope. Do not inspect cookies, scan browser profiles, edit Chrome Preferences, enable unsafe debugging, or modify unrelated extensions.
 
-## Prepare the extension files
+## Install through Chrome Web Store
 
-For an authorized GitHub installation, run this skill's bundled helper from its installed directory:
+Use the user’s chosen browser and available browser tools to open the verified project listing. Choose its installation button and complete the normal browser confirmation. Then check the extension’s installed name/version and follow the verification section below. Store installation does not require Developer mode, the ZIP helper, or an unpacked directory. If the browser requires the user to complete a confirmation, report that step and continue after completion.
+
+## Prepare extension files — ZIP fallback only
+
+For an authorized GitHub ZIP installation, run this skill's bundled helper from its installed directory:
 
 ```sh
 bash scripts/install-extension.sh
@@ -58,9 +63,9 @@ bash scripts/install-extension.sh --install-root /chosen/user-directory/bili-ip-
 
 On an API, checksum, archive, identity, permission or filesystem error, stop that installation path and report the specific failure. Do not silently use an unverified ZIP, fetch a credential, or erase an unfamiliar directory. The helper preserves sibling files in its installation root and refuses updates if its extension directory contains unrelated or modified entries. It rejects a group/world-writable root and unsafe lock files, and rolls back a failed managed-directory swap.
 
-## Load through the browser and verify
+## Verify browser installation
 
-Use the user's specified browser and its available browser/computer-use tools. In Chrome / Chromium, open `chrome://extensions`, enable Developer mode when using the unpacked GitHub route, choose **Load unpacked**, and select the exact `install_path` printed by the helper. Use the ordinary directory chooser. Keep the files in place after loading.
+For the **ZIP fallback only**, use the user’s specified browser and its available browser/computer-use tools. Open `chrome://extensions`, enable Developer mode, choose **Load unpacked**, and select the exact `install_path` printed by the helper. Use the ordinary directory chooser and keep the files in place after loading. Skip unpacked loading for a store installation.
 
 If a browser-owned security confirmation needs the user, leave that step to the user and resume after completion. No command can honestly promise a fully unattended installation across browsers. Do not report `files_ready` as `browser_installed`.
 
@@ -68,4 +73,4 @@ For existing installations, use the browser's extension UI to check the installe
 
 Then follow [references/verification.md](references/verification.md). Verify a region-bearing modern video comment, the actual toolbar popup, immediate OFF/ON, and persistence after reopening. If the page supplies no region data, try a recent comment rather than inventing a location. Dynamic/profile scenarios, historical Vue interfaces, and actual userscript-manager acceptance must not be inferred from the extension's video test.
 
-Report the actual installed version/browser, file path, checks performed, and any remaining manual confirmation. Distinguish **skill installed**, **files prepared**, **extension loaded**, and **behavior verified**.
+Report the actual installed version/browser, distribution source (store listing or ZIP installation path), checks performed, and any remaining manual confirmation. Distinguish **skill installed**, **files prepared**, **extension loaded**, and **behavior verified**.

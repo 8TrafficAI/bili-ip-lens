@@ -2,11 +2,19 @@
 
 在 B站网页版评论的时间旁，显示 **B站已经提供的 IP 属地**。工具栏一键开关，已加载的评论即时显示或隐藏。
 
-[下载扩展 v0.1.1](https://github.com/8TrafficAI/bili-ip-lens/releases/download/v0.1.1/bili-ip-lens-0.1.1.zip) · [Greasy Fork 油猴版](https://greasyfork.org/zh-CN/scripts/605536) · [让 AI 协助安装](https://8trafficai.github.io/bili-ip-lens/agent-install/) · [产品页](https://8trafficai.github.io/bili-ip-lens/) · [English](README.en.md) · [反馈问题](https://github.com/8TrafficAI/bili-ip-lens/issues/new/choose)
+[从 Chrome 商店安装 v0.1.1](https://chromewebstore.google.com/detail/eigfjbfkjlihfkiheeodkckmebolbcgi) · [ZIP 高级备用](https://github.com/8TrafficAI/bili-ip-lens/releases/download/v0.1.1/bili-ip-lens-0.1.1.zip) · [Greasy Fork 油猴版](https://greasyfork.org/zh-CN/scripts/605536) · [让 AI 协助安装](https://8trafficai.github.io/bili-ip-lens/agent-install/) · [产品页](https://8trafficai.github.io/bili-ip-lens/) · [English](README.en.md) · [反馈问题](https://github.com/8TrafficAI/bili-ip-lens/issues/new/choose)
 
-免费、MIT 开源、Manifest V3。当前通过 GitHub 分发；**v0.1.1 已提交 Chrome Web Store 审核，尚未上架**。
+免费、MIT 开源、Manifest V3。**v0.1.1 已于 2026-11-17 确认公开上架 [Chrome Web Store](https://chromewebstore.google.com/detail/eigfjbfkjlihfkiheeodkckmebolbcgi)**。推荐通过商店正常安装；GitHub ZIP 保留为高级备用方式。
 
 ## 如何安装
+
+### Chrome Web Store（推荐）
+
+1. 打开[Bili IP Lens 商店页面](https://chromewebstore.google.com/detail/eigfjbfkjlihfkiheeodkckmebolbcgi)，核对名称「Bili IP Lens · B站评论 IP 属地」及项目网站。
+2. 点击商店的安装按钮，按浏览器提示完成确认。
+3. 固定工具栏图标，刷新已经打开的 B站视频页，再用弹窗中的「显示 IP 属地」开关验证。
+
+商店安装不需要下载 ZIP 或开启开发者模式。
 
 ### 让有本机工具的 AI Agent 协助
 
@@ -18,11 +26,11 @@ npx skills add 8TrafficAI/bili-ip-lens --skill bili-ip-lens
 
 然后告诉它：**「安装 Bili IP Lens 并验证 IP 属地开关。」**
 
-技能会引导它校验最新公开 Release 的 ZIP 与 SHA-256、准备独立安装目录，再通过浏览器正常界面加载并验证。macOS/Linux 的文件准备助手需要 `curl` 和 Python 3.8+；Skills CLI 当前需要 Node.js 22.20+。浏览器必要的确认步骤仍需正常完成，不能把「技能已安装」或「文件已准备」当成扩展已经启用。
+技能优先引导 Agent 核对已上架的项目商店页面，通过浏览器正常安装并验证。仅在选择 ZIP 高级备用方式时，才校验公开 Release 的 ZIP 与 SHA-256、准备独立目录并加载。ZIP 文件准备助手支持 macOS/Linux，需要 `curl` 和 Python 3.8+；Skills CLI 当前需要 Node.js 22.20+。浏览器必要的确认仍需完成，不能把「技能已安装」或「文件已准备」当成扩展已经启用。
 
 Codex、WorkBuddy 等 Agent 只有在当前会话提供相应终端／浏览器工具时才能执行；普通 ChatGPT、Gemini 聊天可以阅读说明，不能因此直接操作你的电脑。详见[AI 安装教程](https://8trafficai.github.io/bili-ip-lens/agent-install/)。
 
-### 下载发行版 ZIP
+### 下载发行版 ZIP（高级备用）
 
 1. 下载 [bili-ip-lens-0.1.1.zip](https://github.com/8TrafficAI/bili-ip-lens/releases/download/v0.1.1/bili-ip-lens-0.1.1.zip)，完整解压到一个固定文件夹。
 2. 在 Chrome / Chromium 地址栏打开 `chrome://extensions`，开启「开发者模式」。
@@ -32,7 +40,7 @@ Codex、WorkBuddy 等 Agent 只有在当前会话提供相应终端／浏览器�
 
 发行版 ZIP 的根目录就是扩展目录；不要另找一个 `extension/` 子文件夹。
 
-### 从源码安装
+### 从源码安装（高级备用）
 
 克隆或下载本仓库后，在第 3 步选择仓库中的 **`extension/` 文件夹**。
 
@@ -46,7 +54,7 @@ Codex、WorkBuddy 等 Agent 只有在当前会话提供相应终端／浏览器�
 
 油猴安装后没有显示时，确认管理器的全局状态为 Enabled、脚本已启用，并在浏览器扩展详情中检查正常的「允许运行用户脚本 / Allow User Scripts」许可；首次安装后刷新 B站页面。本次测试中该浏览器许可原本已开启，无需更改。
 
-Chrome Web Store 的 v0.1.1 已提交审核，目前待审核、尚未上架。Greasy Fork 发布与 GitHub 下载不代表 Chrome 商店审核通过。
+Chrome Web Store 的 v0.1.1 与 Greasy Fork 用户脚本均已公开发布；请选择一种分发方式安装。
 
 ## 能做什么
 
