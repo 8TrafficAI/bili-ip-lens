@@ -1,0 +1,95 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>B站网页版评论不显示 IP 属地？安装与排查｜Bili IP Lens</title>
+<meta name="description" content="B站电脑网页版评论看不到 IP 属地？选一个症状，检查扩展开关、油猴菜单和评论数据，用本地验证过的视频试一下。">
+<link rel="canonical" href="https://8trafficai.github.io/bili-ip-lens/check/">
+<meta name="theme-color" content="#087b86">
+<meta property="og:type" content="article"><meta property="og:site_name" content="Bili IP Lens">
+<meta property="og:title" content="B站评论看不到 IP 属地？选一个症状">
+<meta property="og:description" content="装了还没有、只有部分评论空白，或想在电脑上开启？按症状查，每条都可以单独分享。">
+<meta property="og:url" content="https://8trafficai.github.io/bili-ip-lens/check/">
+<meta property="og:image" content="https://8trafficai.github.io/bili-ip-lens/assets/social-card.png">
+<meta property="og:image:alt" content="Bili IP Lens · B站评论 IP 属地显示">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" type="image/svg+xml" href="../assets/favicon.svg">
+<link rel="stylesheet" href="../assets/site.css">
+<link rel="stylesheet" href="../assets/check.css">
+<script src="../assets/check.js" defer></script>
+</head>
+<body>
+<a class="skip-link" href="#main">跳到正文</a>
+<header class="site-header">
+  <div class="container header-inner">
+    <a class="wordmark" href="../">Bili IP Lens</a>
+    <nav aria-label="主导航"><a href="../install/">安装指南</a><a href="../faq/">常见问题</a><a href="../privacy/">隐私</a></nav>
+  </div>
+</header>
+<main id="main" class="container document check-page">
+  <nav class="breadcrumb" aria-label="当前位置"><a href="../">Bili IP Lens</a><span aria-hidden="true">/</span><span>属地排查</span></nav>
+  <h1>B站评论看不到<br><span>IP 属地？</span></h1>
+  <p class="document-lead">电脑网页版的评论有时带着地区数据，但页面没有显示。先看你遇到的是哪种情况，再决定要不要安装工具。</p>
+
+  <div class="check-grid">
+    <div class="check-choices" aria-label="选择症状">
+      <details id="install" name="symptom" open>
+        <summary>电脑网页版想开启属地显示</summary>
+        <div class="check-answer">
+          <p>在 Chrome 商店安装 Bili IP Lens，刷新已经打开的 B站视频页。展开评论区，在扩展弹窗里开启「显示 IP 属地」，地区会出现在带数据的评论时间旁。</p>
+          <div class="check-actions">
+            <a class="button button-primary" data-check-store href="https://chromewebstore.google.com/detail/eigfjbfkjlihfkiheeodkckmebolbcgi?utm_source=product_site&amp;utm_medium=referral&amp;utm_campaign=comment_ip_check">从 Chrome 商店安装</a>
+            <a class="text-link" href="https://greasyfork.org/zh-CN/scripts/605536">已有油猴？安装脚本</a>
+          </div>
+          <a class="check-link" href="#install">这条排查的链接</a>
+        </div>
+      </details>
+      <details id="no-labels" name="symptom">
+        <summary>已经安装，所有评论还是空白</summary>
+        <div class="check-answer">
+          <ol>
+            <li>在浏览器扩展管理页确认 Bili IP Lens 已启用，再打开工具栏弹窗确认「显示 IP 属地」已开启。</li>
+            <li>如果用油猴版，在管理器中启用脚本，并核对 Bili IP Lens 菜单的开关。</li>
+            <li>刷新 B站视频页，切换到最新评论，再展开一条回复。用右侧视频做一次对照。</li>
+          </ol>
+          <p>对照视频也看不到时，可以附上浏览器版本和页面类型反馈。<a href="https://github.com/8TrafficAI/bili-ip-lens/issues/new/choose">报告问题</a></p>
+          <a class="check-link" href="#no-labels">这条排查的链接</a>
+        </div>
+      </details>
+      <details id="some-missing" name="symptom">
+        <summary>有些评论显示，有些没有</summary>
+        <div class="check-answer">
+          <p>属地取决于 B站为每条评论提供的地区字段。旧评论或缺少地区字段的评论会留白。若同页其他评论已有标签，先切到「最新」比较几条，再用工具栏开关确认标签能隐藏和恢复。</p>
+          <a class="check-link" href="#some-missing">这条排查的链接</a>
+        </div>
+      </details>
+      <details id="scope" name="symptom">
+        <summary>想在手机、直播弹幕里看属地</summary>
+        <div class="check-answer">
+          <p>Bili IP Lens 面向桌面浏览器里的新版 B站评论，支持已验证的视频主评论和楼中楼。手机 App 和直播实时弹幕超出当前支持范围。</p>
+          <a class="check-link" href="#scope">这条排查的链接</a>
+        </div>
+      </details>
+    </div>
+
+    <aside class="check-sample" aria-labelledby="sample-title">
+      <h2 id="sample-title">用一个视频验证</h2>
+      <p>2026 年 11 月 15 日用这个视频的最新评论验证过主评论、楼中楼和开关。评论会随时间变化，选几条新评论一起看。</p>
+      <a class="text-link" href="https://www.bilibili.com/video/BV1xx411c7mD/">打开 B站示例视频 <span aria-hidden="true">↗</span></a>
+      <ol>
+        <li>刷新视频页，选择「最新」。</li>
+        <li>找到评论时间旁的地区标签。</li>
+        <li>关掉再打开扩展开关，观察标签变化。</li>
+      </ol>
+      <a class="text-link" href="https://github.com/8TrafficAI/bili-ip-lens/blob/main/docs/validation-2026-11-15.md">查看原始验证记录 <span aria-hidden="true">↗</span></a>
+    </aside>
+  </div>
+</main>
+<footer class="site-footer">
+  <div class="container footer-inner">
+    <a class="publisher" href="../">Bili IP Lens</a>
+    <div class="footer-links"><a href="https://github.com/8TrafficAI/bili-ip-lens">GitHub 源码</a><a href="../privacy/">隐私说明</a></div>
+  </div>
+</footer>
+</body>
+</html>

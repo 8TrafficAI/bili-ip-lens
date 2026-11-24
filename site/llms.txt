@@ -16,6 +16,7 @@
 - A normal chat can read these instructions without having local execution tools. No marketplace discovery or fully unattended browser installation is promised.
 
 ## Pages
+- [B站评论 IP 属地排查](https://8trafficai.github.io/bili-ip-lens/check/): 缺少标签、部分评论空白、安装开关及复验视频。
 - [Chrome Web Store — primary installation](https://chromewebstore.google.com/detail/eigfjbfkjlihfkiheeodkckmebolbcgi)
 - [Chinese product overview](https://8trafficai.github.io/bili-ip-lens/)
 - [Install guide](https://8trafficai.github.io/bili-ip-lens/install/)

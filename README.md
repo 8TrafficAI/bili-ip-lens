@@ -6,6 +6,8 @@
 
 免费、MIT 开源、Manifest V3。**v0.1.1 已于 2026-11-17 确认公开上架 [Chrome Web Store](https://chromewebstore.google.com/detail/eigfjbfkjlihfkiheeodkckmebolbcgi)**。推荐通过商店正常安装；GitHub ZIP 保留为高级备用方式。
 
+电脑网页版没显示？[按症状排查并打开验证视频](https://8trafficai.github.io/bili-ip-lens/check/?from=github)。
+
 ## 如何安装
 
 ### Chrome Web Store（推荐）
