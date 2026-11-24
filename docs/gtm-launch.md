@@ -1,6 +1,6 @@
 # Bili IP Lens launch brief
 
-Updated: 2026-11-17 · Release: v0.1.1
+Updated: 2026-11-24 · Release: v0.1.1
 
 This document records the launch position, prepared copy, and a manual seven-day measurement plan. Prepared copy is not proof of publication; actual publication URLs and outcomes must be entered after execution.
 
@@ -172,7 +172,7 @@ Published update read-back on 2026-11-15 confirmed the Tampermonkey 5.5.1 / 18-c
 
 The initial plan was manual. On 2026-11-15, the owner requested and enabled a daily GTM/GEO tracking task at 09:00 Asia/Shanghai. It checks publication, available metrics and consumer-AI results without automatically reposting. The first fresh follow-up is recorded in [the dated GTM report](gtm-followup-2026-11-15.md). The first scheduled run is recorded in [the 09:00 daily check](gtm-daily-2026-11-15.md). The [November 17 check](gtm-daily-2026-11-17.md) records the live Chrome Web Store listing, updated distribution counters and fresh consumer-AI observations.
 
-On 2026-11-17, the owner changed the existing task to **weekly, Tuesday at 09:00 Asia/Shanghai**, with targeted social keyword searches and contextual public replies as its primary acquisition work. Replies disclose the maintainer relationship and are logged with publication evidence; LinkedIn remains excluded. Distribution checks continue, while consumer-AI checks become optional rotating samples. The earlier daily reports remain historical records.
+On 2026-11-17, the owner changed the existing task to **weekly, Tuesday at 09:00 Asia/Shanghai**, with targeted social keyword searches and contextual public replies as its primary acquisition work. Replies disclose the maintainer relationship and are logged with publication evidence; LinkedIn remains excluded. Distribution checks continue, while consumer-AI checks become optional rotating samples. The earlier daily reports remain historical records. The [November 24 weekly report](gtm-weekly-2026-11-24.md) records the first published contextual Zhihu answer, screened demand and platform-rule limits on automated outreach.
 
 | When | Action | Record |
 | --- | --- | --- |

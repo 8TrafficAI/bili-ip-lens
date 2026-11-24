@@ -1,7 +1,7 @@
 # Bili IP Lens — product marketing context
 
-Version: 1.3.0
-Updated: 2026-11-17
+Version: 1.4.0
+Updated: 2026-11-24
 Basis: extension source, manifest, validation record, user acceptance of the v0.1.1 popup fix, and the launch operator's normal-UI read-back of the public Chrome Web Store listing on 2026-11-17.
 
 ## Product
@@ -63,6 +63,8 @@ Lead with the user's problem and working installation path. Disclose involvement
 
 No paid spend, fabricated reviews, mass direct messages, bulk reposting, or claims of guaranteed search / AI recommendation results are part of this launch.
 
+As of the November 24 rule check, X keyword-driven automated replies and website scripting are restricted by its official automation rules; no platform approval or recipient opt-in is verified. Do not automate X outreach through the website. Reddit registered-agent requirements and Bilibili automation authorization were not satisfied/established for this task, so no automated promotion was published there. Zhihu work remains individually relevant, disclosed answers rather than repeated advertisements. See docs/gtm-weekly-2026-11-24.md for sources and limits.
+
 ## SEO, AEO, GEO
 
 Create helpful, public, static product facts, an installation guide, visible FAQs, privacy information, version and source attribution. Keep descriptions consistent across the repository, product page, release, X, and Zhihu.
@@ -84,3 +86,5 @@ Current publication, Google indexing and bounded consumer-AI probe evidence is r
 - 2026-11-17 — v1.2.0: record verified live Chrome Web Store v0.1.1 listing and make normal store installation the primary conversion; retain ZIP/userscript alternatives and unavailable organization-verification state.
 
 - 2026-11-17 — v1.3.0: change the existing automation to weekly targeted social acquisition, with relevant disclosed replies and recorded outcomes; reduce mandatory GEO probing.
+
+- 2026-11-24 — v1.4.0: record the first contextual Zhihu answer and verified channel restrictions; weekly cadence and posting caps remain, with no attributed conversion claim.
