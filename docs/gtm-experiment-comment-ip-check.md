@@ -14,3 +14,9 @@
 所有商店跳转使用同一活动标签 `comment_ip_check`。渠道标签只含固定名称，排查页本身没有分析脚本。Chrome 商店后台开放后，对比各来源的页面访问及同期安装、卸载总量。安装统计与来源访问分别读，只有平台确实给出渠道级安装才按渠道归因。[Chrome 商店来源统计](https://developer.chrome.com/blog/cws-analytics-revamp#intentional-and-useful-data-consolidated-and-upfront) · [Chrome 商店指标](https://developer.chrome.com/docs/webstore/metrics)
 
 从上线起观察两个周周期。先复查新页面可达性，已发布链接和来源参数是否保留，再记录可读的来源访问和真实求助。后台需要登录时，仍检查知乎阅读、Greasy Fork 安装计数和公开问题，来源数据记为不可用。发现具体安装受阻，再改对应步骤。若有曝光但缺少明确求助，下一轮优先换问题词和内容入口，保留发布链接与反馈凭据。
+
+## 首轮上线回执
+
+2026-11-24，排查页及官网链接通过 GitHub Pages 发布。桌面和窄屏验证了症状展开与直接链接。实际点进 Chrome 商店后，`github` 来源和 `comment_ip_check` 活动标签仍在。测试人员打开的商店页计入自测。站点和镜像完整性检查通过。[站点部署](https://github.com/8TrafficAI/bili-ip-lens/actions/runs/45322409844) · [仓库检查](https://github.com/8TrafficAI/bili-ip-lens/actions/runs/45322409930)
+
+发行说明和知乎原文均已更新并回读。知乎文章原篇幅和安装备用步骤保留，过时的商店状态已纠正。IndexNow 对新增排查页及四个修改页面返回 HTTP 200，收录状态待查。商店后台要求重新验证，当前来源和安装明细不可读。[发行说明](https://github.com/8TrafficAI/bili-ip-lens/releases/tag/v0.1.1) · [知乎原文](https://zhuanlan.zhihu.com/p/2105162590800311760)

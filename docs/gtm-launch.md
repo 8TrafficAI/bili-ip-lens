@@ -81,7 +81,7 @@ B站网页版怎么显示评论 IP 属地？一个可开关的开源小工具
 
 ### Body
 
-The copy below records the article as published on 2026-11-15. Its store-pending wording is historical: the Chrome Web Store listing was verified live on 2026-11-17. The daily tracker did not automatically edit or repost the social article.
+The copy below records the article as published on 2026-11-15. Its store-pending wording is historical: the Chrome Web Store listing was verified live on 2026-11-17. The daily tracker did not edit the article. A separate November 24 growth experiment updated its installation paragraph to the live store route and added the troubleshooting link.
 
 我们在 8Traffic 做了一个小工具，叫 Bili IP Lens。用途很具体：在 B站网页版评论时间旁，显示平台已经提供的 IP 属地，再给它加一个随时可以关闭的开关。下面是开发者自己的功能与安装说明。
 
@@ -173,6 +173,8 @@ Published update read-back on 2026-11-15 confirmed the Tampermonkey 5.5.1 / 18-c
 The initial plan was manual. On 2026-11-15, the owner requested and enabled a daily GTM/GEO tracking task at 09:00 Asia/Shanghai. It checks publication, available metrics and consumer-AI results without automatically reposting. The first fresh follow-up is recorded in [the dated GTM report](gtm-followup-2026-11-15.md). The first scheduled run is recorded in [the 09:00 daily check](gtm-daily-2026-11-15.md). The [November 17 check](gtm-daily-2026-11-17.md) records the live Chrome Web Store listing, updated distribution counters and fresh consumer-AI observations.
 
 On 2026-11-17, the owner changed the existing task to **weekly, Tuesday at 09:00 Asia/Shanghai**, with targeted social keyword searches and contextual public replies as its primary acquisition work. Replies disclose the maintainer relationship and are logged with publication evidence; LinkedIn remains excluded. Distribution checks continue, while consumer-AI checks become optional rotating samples. The earlier daily reports remain historical records. The [November 24 weekly report](gtm-weekly-2026-11-24.md) records the first published contextual Zhihu answer, screened demand and platform-rule limits on automated outreach.
+
+The [comment IP troubleshooting experiment](gtm-experiment-comment-ip-check.md) began on November 24. The weekly task now checks published assets and feedback, carries out one action grounded in a concrete user problem where possible, and reviews the experiment after two weekly cycles. Contextual social outreach continues under the channel rules recorded above.
 
 | When | Action | Record |
 | --- | --- | --- |
